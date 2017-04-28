@@ -12,6 +12,8 @@
 		D7535E841EB2810F005FC446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7535E821EB2810F005FC446 /* Main.storyboard */; };
 		D7535E861EB2810F005FC446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7535E851EB2810F005FC446 /* Assets.xcassets */; };
 		D7535E891EB2810F005FC446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7535E871EB2810F005FC446 /* LaunchScreen.storyboard */; };
+		D7DE90571EB3CA0A00AA8EF4 /* NutshackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DE90561EB3CA0A00AA8EF4 /* NutshackViewController.swift */; };
+		D7DE90591EB3CA1C00AA8EF4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DE90581EB3CA1C00AA8EF4 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,8 @@
 		D7535E851EB2810F005FC446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7535E881EB2810F005FC446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7535E8A1EB2810F005FC446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7DE90561EB3CA0A00AA8EF4 /* NutshackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutshackViewController.swift; sourceTree = "<group>"; };
+		D7DE90581EB3CA1C00AA8EF4 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +60,8 @@
 			children = (
 				D7535E7E1EB2810F005FC446 /* AppDelegate.swift */,
 				D7535E801EB2810F005FC446 /* ViewController.swift */,
+				D7DE90561EB3CA0A00AA8EF4 /* NutshackViewController.swift */,
+				D7DE90581EB3CA1C00AA8EF4 /* SecondViewController.swift */,
 				D7535E821EB2810F005FC446 /* Main.storyboard */,
 				D7535E851EB2810F005FC446 /* Assets.xcassets */,
 				D7535E871EB2810F005FC446 /* LaunchScreen.storyboard */,
@@ -136,6 +142,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D7DE90591EB3CA1C00AA8EF4 /* SecondViewController.swift in Sources */,
+				D7DE90571EB3CA0A00AA8EF4 /* NutshackViewController.swift in Sources */,
 				D7535E811EB2810F005FC446 /* ViewController.swift in Sources */,
 				D7535E7F1EB2810F005FC446 /* AppDelegate.swift in Sources */,
 			);
@@ -301,6 +309,7 @@
 				D7535E8F1EB2810F005FC446 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
