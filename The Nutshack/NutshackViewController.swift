@@ -9,6 +9,7 @@
 import UIKit
 
 class NutshackViewController: UIViewController {
+    @IBOutlet weak var Person: UIImageView!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -22,14 +23,25 @@ class NutshackViewController: UIViewController {
     }
     
 
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        var touch : UITouch! =  touches.first! as UITouch
+        
+        var location = touch.location(in: self.view)
+        
+        Person.center = location
+        
+    
+    func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+        let touch : UITouch! =  touches.first! as UITouch
+        
+        location = touch.location(in: self.view)
+        
+        Person.center = location
     }
-    */
+
+    
+    }
 
 }
