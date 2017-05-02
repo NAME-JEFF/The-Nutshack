@@ -7,6 +7,7 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Unknown constraint types" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -38,9 +39,8 @@
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKe-gK-mCN">
+                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKe-gK-mCN">
                                         <rect key="frame" x="113" y="356" width="116" height="61"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <state key="normal" title="Start"/>
                                         <connections>
                                             <segue destination="PHO-0H-prz" kind="show" id="d7g-TM-kFK"/>
@@ -67,9 +67,8 @@
                         <color key="backgroundColor" red="0.84731217616580312" green="0.5976478839811834" blue="0.37224735926293473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Fx7-PS-y32" secondAttribute="bottom" constant="20" id="1hV-LH-QmY"/>
-                            <constraint firstItem="6LP-NL-Ark" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1k1-ld-nmZ"/>
-                            <constraint firstAttribute="trailing" secondItem="6LP-NL-Ark" secondAttribute="trailing" constant="-51" id="2UC-bj-Egt"/>
-                            <constraint firstItem="6LP-NL-Ark" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-49" id="Ih3-g9-Xy4"/>
+                            <constraint firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1k1-ld-nmZ"/>
+                            <constraint firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-49" id="Ih3-g9-Xy4"/>
                             <constraint firstItem="Fx7-PS-y32" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="159" id="OpR-iy-8Qg"/>
                             <constraint firstItem="Fx7-PS-y32" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="evy-m5-v5j"/>
                             <constraint firstItem="Fx7-PS-y32" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rIf-RE-QPH"/>
@@ -142,6 +141,5 @@
     </scenes>
     <resources>
         <image name="Roblox" width="420" height="420"/>
-        <image name="Tito" width="1280" height="720"/>
     </resources>
 </document>
