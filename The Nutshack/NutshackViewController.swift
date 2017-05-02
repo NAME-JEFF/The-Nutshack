@@ -20,9 +20,17 @@ class NutshackViewController: UIViewController {
         Person.center = location
     }
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
     }
 
+    
+    
+    
+    
+    
+    
     }
