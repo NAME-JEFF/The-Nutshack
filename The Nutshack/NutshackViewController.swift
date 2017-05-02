@@ -41,7 +41,6 @@ class NutshackViewController: UIViewController {
         Person.center = location
     }
 
-    
     }
 
 }
