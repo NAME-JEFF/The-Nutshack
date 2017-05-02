@@ -6,7 +6,6 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
-        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Unknown constraint types" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -23,55 +22,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fx7-PS-y32">
-                                <rect key="frame" x="16" y="179" width="343" height="468"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PPl-KT-tet">
+                                <rect key="frame" x="286" y="127" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <segue destination="PHO-0H-prz" kind="show" id="tC8-GC-5Pq"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tito" translatesAutoresizingMaskIntoConstraints="NO" id="tzb-3Y-xG4">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="225"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tito" translatesAutoresizingMaskIntoConstraints="NO" id="AD3-Xs-6Fv">
+                                <rect key="frame" x="0.0" y="221" width="375" height="228"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tito" translatesAutoresizingMaskIntoConstraints="NO" id="rra-4r-ccr">
+                                <rect key="frame" x="0.0" y="449" width="375" height="218"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KsJ-LG-SQj">
+                                <rect key="frame" x="37" y="145" width="300" height="377"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="NVj-UI-57X">
-                                        <rect key="frame" x="8" y="8" width="327" height="452"/>
-                                        <color key="backgroundColor" red="1" green="0.27927156358992855" blue="0.31083384937189296" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="327" id="8x6-p1-hBs"/>
-                                            <constraint firstAttribute="height" constant="452" id="GC3-gB-5m9"/>
-                                            <constraint firstAttribute="width" constant="327" id="VW0-cs-aVJ"/>
-                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="452" id="Zom-8F-YJ6"/>
-                                        </constraints>
-                                        <string key="text">How to Play _________________________  1. Move the ball using the joystick on the bottom of the screen.  2. Do not move the ball into any blocks or other obstacles - you will die!  3. GET TO THE NUTSHACK!!!</string>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="19"/>
-                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                                    </textView>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AKe-gK-mCN">
-                                        <rect key="frame" x="113" y="356" width="116" height="61"/>
-                                        <state key="normal" title="Start"/>
-                                        <connections>
-                                            <segue destination="PHO-0H-prz" kind="show" id="d7g-TM-kFK"/>
-                                        </connections>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="THE NUTSHACK" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dcB-XB-dut">
+                                        <rect key="frame" x="0.0" y="36" width="300" height="102"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="41"/>
+                                        <color key="textColor" red="0.80950453367875652" green="0.097343920147961643" blue="0.016794913075536804" alpha="0.74004181338028174" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="highlightedColor" red="0.80950453367875652" green="0.073131224980385739" blue="0.69275019777607172" alpha="0.74004181338028174" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <color key="shadowColor" red="1" green="0.22163965787378315" blue="0.39550934181408104" alpha="0.74004181338028174" colorSpace="custom" customColorSpace="sRGB"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jr-U9-fn0">
+                                        <rect key="frame" x="102" y="269" width="96" height="58"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="31"/>
+                                        <state key="normal" title="START">
+                                            <color key="titleColor" red="0.0" green="0.80950453367875652" blue="0.74523470792102353" alpha="0.74004181338028174" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="&lt;INSERT HOW TO PLAY HERE&gt; &lt;INSERT HOW TO PLAY HERE&gt;&lt;INSERT HOW TO PLAY HERE&gt;" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VU5-jx-zEP">
+                                        <rect key="frame" x="8" y="135" width="284" height="126"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <color key="textColor" red="0.66405705839243534" green="0.80950453367875652" blue="0.59639684756303146" alpha="0.74004181338028174" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                 </subviews>
-                                <color key="backgroundColor" red="1" green="0.4096946515494686" blue="0.98003542415547185" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="AKe-gK-mCN" secondAttribute="trailing" constant="109" id="Alh-oC-AsP"/>
-                                    <constraint firstAttribute="bottom" secondItem="AKe-gK-mCN" secondAttribute="bottom" constant="28" id="Mgc-25-uAo"/>
-                                    <constraint firstAttribute="trailing" secondItem="NVj-UI-57X" secondAttribute="trailing" constant="8" id="Np7-0G-Opg"/>
-                                    <constraint firstItem="NVj-UI-57X" firstAttribute="top" secondItem="Fx7-PS-y32" secondAttribute="top" constant="8" id="QRh-cU-xB6"/>
-                                    <constraint firstItem="NVj-UI-57X" firstAttribute="top" secondItem="Fx7-PS-y32" secondAttribute="top" constant="8" id="S7t-mZ-wZE"/>
-                                    <constraint firstAttribute="height" constant="468" id="TsS-M1-DG8"/>
-                                    <constraint firstAttribute="width" constant="343" id="Ye4-fr-RJk"/>
-                                    <constraint firstItem="AKe-gK-mCN" firstAttribute="leading" secondItem="Fx7-PS-y32" secondAttribute="leading" constant="108" id="Yo4-ku-r9r"/>
-                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="343" id="iUk-ra-fAW"/>
-                                    <constraint firstItem="NVj-UI-57X" firstAttribute="leading" secondItem="Fx7-PS-y32" secondAttribute="leading" constant="8" id="mXV-5x-8oc"/>
-                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="468" id="rR4-VQ-02d"/>
-                                    <constraint firstAttribute="bottom" secondItem="NVj-UI-57X" secondAttribute="bottom" constant="8" id="vPf-gw-WNR"/>
-                                </constraints>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.74004181338028174" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="0.84731217616580312" green="0.5976478839811834" blue="0.37224735926293473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Fx7-PS-y32" secondAttribute="bottom" constant="20" id="1hV-LH-QmY"/>
                             <constraint firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="1k1-ld-nmZ"/>
                             <constraint firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="-49" id="Ih3-g9-Xy4"/>
-                            <constraint firstItem="Fx7-PS-y32" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="159" id="OpR-iy-8Qg"/>
-                            <constraint firstItem="Fx7-PS-y32" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="evy-m5-v5j"/>
-                            <constraint firstItem="Fx7-PS-y32" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="rIf-RE-QPH"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -118,8 +123,31 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xlz-er-qGw">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.38145622691210657" green="0.55889734455958551" blue="0.24879399720234352" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Roblox" translatesAutoresizingMaskIntoConstraints="NO" id="eRS-Mw-0fk">
-                                <rect key="frame" x="143" y="269" width="140" height="100"/>
+                                <rect key="frame" x="127" y="484" width="120" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.15495635626118365" blue="0.47102818528620238" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="tintColor" red="0.77835311422793008" green="0.95716058184610142" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tito" translatesAutoresizingMaskIntoConstraints="NO" id="UhS-aS-HzA">
+                                <rect key="frame" x="365" y="0.0" width="10" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tito" translatesAutoresizingMaskIntoConstraints="NO" id="faf-Kd-rzh">
+                                <rect key="frame" x="0.0" y="0.0" width="10" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tito" translatesAutoresizingMaskIntoConstraints="NO" id="chP-VP-due">
+                                <rect key="frame" x="7" y="0.0" width="352" height="10"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Tito" translatesAutoresizingMaskIntoConstraints="NO" id="QNI-NL-LxY">
+                                <rect key="frame" x="7" y="657" width="359" height="10"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -131,10 +159,11 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0h-C0-zLx" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="808.79999999999995" y="580.65967016491754"/>
+            <point key="canvasLocation" x="839.20000000000005" y="580.65967016491754"/>
         </scene>
     </scenes>
     <resources>
         <image name="Roblox" width="420" height="420"/>
+        <image name="Tito" width="1280" height="720"/>
     </resources>
 </document>
