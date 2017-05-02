@@ -104,7 +104,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i1N-Vx-cSS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137" y="1498"/>
+            <point key="canvasLocation" x="540" y="1278"/>
         </scene>
         <!--Nutshack View Controller-->
         <scene sceneID="tnA-pg-rty">
