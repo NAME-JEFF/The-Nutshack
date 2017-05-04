@@ -162,43 +162,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Xlz-er-qGw">
-                                <rect key="frame" x="16" y="0.0" width="375" height="667"/>
-                                <color key="backgroundColor" red="0.074077072538860089" green="0.058587661914650403" blue="0.0055813574995651812" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </view>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Roblox" translatesAutoresizingMaskIntoConstraints="NO" id="eRS-Mw-0fk">
-                                <rect key="frame" x="127" y="484" width="120" height="80"/>
+                                <rect key="frame" x="127" y="397" width="120" height="90"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="0.15495635626118365" blue="0.47102818528620238" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="tintColor" red="0.77835311422793008" green="0.95716058184610142" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" image="FootPowderSPRAAAAAAAY" translatesAutoresizingMaskIntoConstraints="NO" id="UhS-aS-HzA">
-                                <rect key="frame" x="365" y="0.0" width="10" height="667"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="obey transpa" translatesAutoresizingMaskIntoConstraints="NO" id="faf-Kd-rzh">
-                                <rect key="frame" x="0.0" y="0.0" width="10" height="667"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="shag" translatesAutoresizingMaskIntoConstraints="NO" id="chP-VP-due">
-                                <rect key="frame" x="7" y="0.0" width="352" height="10"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" image="cyk city" translatesAutoresizingMaskIntoConstraints="NO" id="QNI-NL-LxY">
-                                <rect key="frame" x="7" y="657" width="359" height="10"/>
+                                <gestureRecognizers/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                        <constraints>
-                            <constraint firstItem="Xlz-er-qGw" firstAttribute="top" secondItem="fXf-Dc-bNf" secondAttribute="top" id="1Td-sO-o8R"/>
-                            <constraint firstItem="Xlz-er-qGw" firstAttribute="bottom" secondItem="1qH-E1-7ry" secondAttribute="top" id="5Vl-30-dZU"/>
-                            <constraint firstItem="Xlz-er-qGw" firstAttribute="bottom" secondItem="QNI-NL-LxY" secondAttribute="bottom" id="7q2-vk-Omi"/>
-                            <constraint firstItem="Xlz-er-qGw" firstAttribute="top" secondItem="UhS-aS-HzA" secondAttribute="top" id="HuD-gH-8iM"/>
-                            <constraint firstItem="Xlz-er-qGw" firstAttribute="bottom" secondItem="faf-Kd-rzh" secondAttribute="bottom" id="Jub-g4-fGJ"/>
-                            <constraint firstItem="Xlz-er-qGw" firstAttribute="bottom" secondItem="UhS-aS-HzA" secondAttribute="bottom" id="WpZ-u7-2fo"/>
-                            <constraint firstItem="Xlz-er-qGw" firstAttribute="top" secondItem="chP-VP-due" secondAttribute="top" id="dcn-HM-Qp9"/>
-                            <constraint firstItem="Xlz-er-qGw" firstAttribute="leading" secondItem="faf-Kd-rzh" secondAttribute="trailing" constant="6" id="fMN-Gh-9kj"/>
-                            <constraint firstItem="Xlz-er-qGw" firstAttribute="top" secondItem="faf-Kd-rzh" secondAttribute="top" id="fPu-Ko-QNj"/>
-                            <constraint firstItem="Xlz-er-qGw" firstAttribute="leading" secondItem="fXf-Dc-bNf" secondAttribute="leadingMargin" id="pGv-Nl-gSO"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Xlz-er-qGw" secondAttribute="trailing" constant="-32" id="zCz-TP-Wdc"/>
-                        </constraints>
                     </view>
                     <connections>
                         <outlet property="Person" destination="eRS-Mw-0fk" id="OSo-lS-0V7"/>
@@ -210,11 +182,7 @@
         </scene>
     </scenes>
     <resources>
-        <image name="FootPowderSPRAAAAAAAY" width="923" height="1382"/>
         <image name="Roblox" width="420" height="420"/>
         <image name="Tito" width="1280" height="720"/>
-        <image name="cyk city" width="960" height="955"/>
-        <image name="obey transpa" width="1280" height="1280"/>
-        <image name="shag" width="200" height="162"/>
     </resources>
 </document>

@@ -10,27 +10,23 @@ import UIKit
 
 class NutshackViewController: UIViewController {
     @IBOutlet weak var Person: UIImageView!
-
+    
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         
-        let touch : UITouch! =  touches.first! as UITouch
+        let touch : UITouch! = touches.first! as UITouch
         
         let location = touch.location(in: self.view)
         
-        Person.center = location
+        self.Person.center = location
+    
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         
-        
-    }
-
+                }
+                
+                
+            }
     
-    
-    
-    
-    
-    
-    }
