@@ -10,6 +10,8 @@ import UIKit
 
 class NutshackViewController: UIViewController {
     @IBOutlet weak var Person: UIImageView!
+    @IBOutlet weak var topTitoBarrier: UIImageView!
+    @IBOutlet weak var rightTitoBarrier: UIImageView!
 
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         
