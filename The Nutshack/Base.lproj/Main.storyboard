@@ -149,7 +149,6 @@
         <!--View Controller-->
         <scene sceneID="hv4-j1-rRq">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FOi-ql-Ksc" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="ieT-aV-E3K" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AxA-u5-dF9"/>
@@ -162,6 +161,13 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KaK-7b-DaB">
                                 <rect key="frame" x="0.0" y="251" width="300" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cgg-AT-PHp">
+                                        <rect key="frame" x="58" y="0.0" width="19" height="33"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xZV-tK-rwN">
@@ -217,24 +223,18 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="IGk-gH-a7X">
                                 <rect key="frame" x="29" y="284" width="29" height="383"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3vA-dF-Ltl">
-                                        <rect key="frame" x="0.0" y="222" width="29" height="20"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                    </view>
-                                </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cgg-AT-PHp">
-                                <rect key="frame" x="66" y="251" width="19" height="33"/>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Awg-7W-Rg2">
+                                <rect key="frame" x="57" y="559" width="91" height="23"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FOi-ql-Ksc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1813.5999999999999" y="580.65967016491754"/>
         </scene>
@@ -262,8 +262,6 @@
                     </view>
                     <connections>
                         <outlet property="Person" destination="eRS-Mw-0fk" id="OSo-lS-0V7"/>
-                        <outlet property="rightTitoBarrier" destination="UhS-aS-HzA" id="KFj-1d-oI7"/>
-                        <outlet property="topTitoBarrier" destination="chP-VP-due" id="hDe-9a-1IC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0h-C0-zLx" userLabel="First Responder" sceneMemberID="firstResponder"/>
