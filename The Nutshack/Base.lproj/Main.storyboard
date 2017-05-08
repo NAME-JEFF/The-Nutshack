@@ -174,8 +174,6 @@
                     </view>
                     <connections>
                         <outlet property="Person" destination="eRS-Mw-0fk" id="OSo-lS-0V7"/>
-                        <outlet property="rightTitoBarrier" destination="UhS-aS-HzA" id="KFj-1d-oI7"/>
-                        <outlet property="topTitoBarrier" destination="chP-VP-due" id="hDe-9a-1IC"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0h-C0-zLx" userLabel="First Responder" sceneMemberID="firstResponder"/>
