@@ -146,11 +146,10 @@
             </objects>
             <point key="canvasLocation" x="540" y="1278"/>
         </scene>
-        <!--View Controller-->
+        <!--Nutshack View Controller-->
         <scene sceneID="hv4-j1-rRq">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="FOi-ql-Ksc" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <viewController id="ieT-aV-E3K" sceneMemberID="viewController">
+                <viewController id="ieT-aV-E3K" customClass="NutshackViewController" customModule="The_Nutshack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="AxA-u5-dF9"/>
                         <viewControllerLayoutGuide type="bottom" id="ES8-Vl-dgy"/>
@@ -159,6 +158,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Xyi-Mg-eSo">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KaK-7b-DaB">
                                 <rect key="frame" x="0.0" y="251" width="300" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -234,7 +238,11 @@
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="endBackground" destination="Xyi-Mg-eSo" id="3eb-cE-mq3"/>
+                    </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FOi-ql-Ksc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1813.5999999999999" y="580.65967016491754"/>
         </scene>
