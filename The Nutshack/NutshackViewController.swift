@@ -9,6 +9,7 @@
 import UIKit
 
 class NutshackViewController: UIViewController {
+    var roids = 1
     
     @IBOutlet weak var Person: UIImageView!
     @IBOutlet weak var endBackground: UIView!
@@ -41,10 +42,10 @@ class NutshackViewController: UIViewController {
             return false
         }
     }
-}
+
     
         
-    override func viewDidLoad() {
+    func viewDidLoad() {
         super.viewDidLoad()
         
         
@@ -76,4 +77,5 @@ class NutshackViewController: UIViewController {
         }
 
         }
-    
+
+}
