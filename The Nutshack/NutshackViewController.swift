@@ -61,5 +61,3 @@ class NutshackViewController: UIViewController {
 
         }
     }
-    
-}
