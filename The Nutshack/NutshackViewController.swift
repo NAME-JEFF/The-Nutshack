@@ -54,7 +54,7 @@ class NutshackViewController: UIViewController {
                 
             }
     
-}
+
 
     @IBAction func takenRoids(_ sender: UIButton) {
         roids += 1
@@ -76,4 +76,4 @@ class NutshackViewController: UIViewController {
         }
 
         }
-    }
+    
