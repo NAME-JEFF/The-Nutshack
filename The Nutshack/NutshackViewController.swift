@@ -13,13 +13,7 @@ class NutshackViewController: UIViewController {
     
     var personBool = false
     
-    @IBAction func touchDraggedOut(_ sender: UIButton) {
-        var touch = touches.anyObject() as! UITouch
-        var point = touch.locationInView(self.view)
-        
-        
-        
-    }
+    
 
 
 
