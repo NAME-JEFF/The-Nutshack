@@ -261,11 +261,23 @@
                                     <action selector="takenRoids:" destination="PHO-0H-prz" eventType="touchUpInside" id="9iD-20-apu"/>
                                 </connections>
                             </button>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tcC-fI-JsK">
+                                <rect key="frame" x="111" y="150" width="100" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="0.044473230344406645" blue="0.10637976257256798" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="hWs-X4-pwj">
+                                <rect key="frame" x="111" y="298" width="100" height="128"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.35116623471301689" green="0.35896266007738908" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <connections>
                         <outlet property="Person" destination="eRS-Mw-0fk" id="OSo-lS-0V7"/>
+                        <outlet property="blueRoids" destination="hWs-X4-pwj" id="duU-tH-Tr4"/>
+                        <outlet property="redRoids" destination="tcC-fI-JsK" id="SKY-DQ-Bya"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0h-C0-zLx" userLabel="First Responder" sceneMemberID="firstResponder"/>
