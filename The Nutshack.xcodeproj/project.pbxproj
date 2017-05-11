@@ -102,6 +102,7 @@
 				TargetAttributes = {
 					D7535E7A1EB2810F005FC446 = {
 						CreatedOnToolsVersion = 8.3.2;
+						DevelopmentTeam = 4WTDJJ56S9;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -270,6 +271,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4WTDJJ56S9;
 				INFOPLIST_FILE = "The Nutshack/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.jhhs.The-Nutshack";
@@ -282,6 +284,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 4WTDJJ56S9;
 				INFOPLIST_FILE = "The Nutshack/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.jhhs.The-Nutshack";
