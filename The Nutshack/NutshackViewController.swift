@@ -40,7 +40,7 @@ class NutshackViewController: UIViewController {
 
         self.view.addSubview(Person)
         
-    
+    }
 
 
     @IBAction func takenRoids(_ sender: UIButton) {
