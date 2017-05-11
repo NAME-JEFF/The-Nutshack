@@ -16,32 +16,7 @@ class NutshackViewController: UIViewController {
     @IBOutlet weak var endBackgroundOne: UIView!
     
     
-    var location = CGPoint(x: 0, y: 0)
-
-    func touchesBegan(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        let touch : UITouch = touches.first as UITouch!
-        location = touch.location(in: self.view)
-        Person.center = location
-    }
     
-    func touchesMoved(touches: Set<UITouch>, withEvent event: UIEvent?) {
-        let touch : UITouch = touches.first as UITouch!
-        location = touch.location(in: self.view)
-        
-        self.Person.center = location
-        
-        
-         class PassThroughView: UIView {
-            
-        func eventOne(inside point: CGPoint, with event: UIEvent?) -> Bool {
-            for subview in subviews as [UIView] {
-                if !subview.isHidden && subview.alpha > 0 && subview.isUserInteractionEnabled && subview.point(inside: convert(point, to: subview), with: event) {
-                    return true
-                }
-            }
-            return false
-        }
-    }
 
     
         
