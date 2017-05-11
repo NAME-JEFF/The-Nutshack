@@ -40,26 +40,6 @@ class NutshackViewController: UIViewController {
 
         self.view.addSubview(Person)
         
-        
-        
-        func checkViewIsInterSecting(viewToCheck: UIView) -> Bool{
-            let allSubViews = self.view!.subviews
-            for Person in allSubViews{
-                if (!(viewToCheck .isEqual(Person))){
-                    if(viewToCheck.frame.intersects(Person.frame)){
-                        return true
-                        
-                        
-                    }
-                }
-            }
-            return false
-            
-        }
-        
-        if checkViewIsInterSecting(viewToCheck: roidsView) {
-            print("roids touched")
-        }
     
 }
 
@@ -89,8 +69,26 @@ class NutshackViewController: UIViewController {
             
                 }
         
-
+        
+        
+        func checkViewIsInterSecting(viewToCheck: UIView) -> Bool{
+            let allSubViews = self.view!.subviews
+            for Person in allSubViews{
+                if (!(viewToCheck .isEqual(Person))){
+                    if(viewToCheck.frame.intersects(Person.frame)){
+                        return true
+                        
+                        
+                    }
+                }
+            }
+            return false
             
+        }
+        
+        if checkViewIsInterSecting(viewToCheck: Person) {
+            print("roids touched")
+        }
             }
         }
 

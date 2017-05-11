@@ -259,7 +259,7 @@
                                 <color key="backgroundColor" red="1" green="0.099069310005007183" blue="0.11954845465564667" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ld1-pG-KJR">
-                                <rect key="frame" x="170" y="183" width="34" height="30"/>
+                                <rect key="frame" x="170" y="199" width="34" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="roids"/>
                                 <connections>
