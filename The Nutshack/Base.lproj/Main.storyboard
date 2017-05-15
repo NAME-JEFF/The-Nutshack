@@ -29,10 +29,10 @@
                                     <constraint firstAttribute="width" constant="375" id="Ywe-tn-cS7"/>
                                 </constraints>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="namejeff" translatesAutoresizingMaskIntoConstraints="NO" id="AD3-Xs-6Fv">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="namejeff" translatesAutoresizingMaskIntoConstraints="NO" id="AD3-Xs-6Fv">
                                 <rect key="frame" x="0.0" y="221" width="375" height="301"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="228" id="xkC-ZG-xTT"/>
+                                    <constraint firstAttribute="height" constant="301" id="xkC-ZG-xTT"/>
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="shag" translatesAutoresizingMaskIntoConstraints="NO" id="rra-4r-ccr">
@@ -98,7 +98,7 @@
                             <constraint firstItem="tzb-3Y-xG4" firstAttribute="leading" secondItem="AD3-Xs-6Fv" secondAttribute="leading" id="ae6-rh-Hwn"/>
                             <constraint firstItem="KsJ-LG-SQj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="125" id="gMw-oC-XvL"/>
                             <constraint firstItem="tzb-3Y-xG4" firstAttribute="trailing" secondItem="AD3-Xs-6Fv" secondAttribute="trailing" id="j2n-YK-YCM"/>
-                            <constraint firstItem="rra-4r-ccr" firstAttribute="top" secondItem="AD3-Xs-6Fv" secondAttribute="bottom" id="k8U-Ok-eFG"/>
+                            <constraint firstItem="rra-4r-ccr" firstAttribute="top" secondItem="AD3-Xs-6Fv" secondAttribute="bottom" constant="-73" id="k8U-Ok-eFG"/>
                             <constraint firstItem="AD3-Xs-6Fv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="201" id="qIt-BI-I6r"/>
                             <constraint firstItem="tzb-3Y-xG4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ryn-1m-ERD"/>
                             <constraint firstItem="tzb-3Y-xG4" firstAttribute="leading" secondItem="rra-4r-ccr" secondAttribute="leading" id="ymr-WA-p93"/>
@@ -308,9 +308,9 @@
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kGA-dZ-LbM">
-                                                <rect key="frame" x="209" y="0.0" width="23" height="43"/>
+                                                <rect key="frame" x="209" y="-14" width="23" height="29"/>
                                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                                <color key="backgroundColor" red="0.49920946359634399" green="0.9482540488243103" blue="0.14626890420913696" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                             </view>
                                         </subviews>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -466,6 +466,11 @@
                                         <rect key="frame" x="57" y="124" width="46" height="62"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oOw-4x-OYS">
+                                        <rect key="frame" x="255" y="263" width="23" height="43"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.49920946359634399" green="0.9482540488243103" blue="0.14626890420913696" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.49953407049179077" green="0.94796508550643921" blue="0.098156236112117767" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
