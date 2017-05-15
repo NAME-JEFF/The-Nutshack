@@ -10,7 +10,6 @@ import UIKit
 
 class NutshackViewController: UIViewController {
     var roids = 1
-    var model = 1
     
     @IBOutlet weak var roidsView: UIView!
     
@@ -33,61 +32,54 @@ class NutshackViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        
-        
-        
-        
-        
-        
         Person.frame = CGRect(x: 130, y: 450, width: 85, height: 100)
-
         self.view.addSubview(Person)
 
     }
 
-
-    @IBAction func takenRoids(_ sender: UIButton) {
-        roids += 1
-        
-        
-        if roids == 2 { Person.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 185, height: 200)
-            Person.image = UIImage(named:"Roblox-1")
-            self.view.addSubview(Person)
-            
-            
-        }
-        
-        if roids == 3 { Person.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 285, height: 300)
-            self.view.addSubview(Person)
-        }
-        
-        if roids == 4 { Person.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 300, height: 50)
-            self.view.addSubview(Person)
-        }
-        
-        if roids == 5 {
-            Person.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 85, height: 100)
-            self.view.addSubview(Person)
-        Person.image = UIImage(named:"Roblox")
-            if roids == 3 {
-                roids = 1
-            }
-
-        }
-    }
     @IBAction func pickUp(_ sender: UIButton) {
         if roidsView.frame.contains(Person.center)
         {
-            Person.image = UIImage(named:"Roblox")
-    
-            
+            Person.image = UIImage(named:"Roblox-1")
+            Person.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 285, height: 300)
+            self.view.addSubview(Person)
         }
+        
+        
     }
     
 }
 
 
+
+//roids += 1
+
+
+//if roids == 2 { Person.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 185, height: 200)
+//    Person.image = UIImage(named:"Roblox-1")
+//    self.view.addSubview(Person)
+    
+    
+//}
+
+//if roids == 3 { Person.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 285, height: 300)
+//    self.view.addSubview(Person)
+//}
+
+//if roids == 4 { Person.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 300, height: 50)
+//    self.view.addSubview(Person)
+//}
+
+//if roids == 5 {
+//    Person.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 85, height: 100)
+//    self.view.addSubview(Person)
+//    Person.image = UIImage(named:"Roblox")
+//    if roids == 3 {
+//        roids = 1
+//    }
+    
+//}
+//}
 
 
 
