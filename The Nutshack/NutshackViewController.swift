@@ -13,8 +13,7 @@ class NutshackViewController: UIViewController {
     var model = 1
     
     @IBOutlet weak var roidsView: UIView!
-
-
+    
     var location = CGPoint(x: 0, y: 0)
     
     @IBOutlet weak var Person: UIImageView!
@@ -22,7 +21,6 @@ class NutshackViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch : UITouch = touches.first as UITouch!
         location = touch.location(in: self.view)
-        Person.center = location
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -30,24 +28,34 @@ class NutshackViewController: UIViewController {
         location = touch.location(in: self.view)
         
         Person.center = location
+        
     }
-    
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        
+        
+        
+        
+        
         
         Person.frame = CGRect(x: 130, y: 450, width: 85, height: 100)
 
         self.view.addSubview(Person)
-        
+
     }
 
 
     @IBAction func takenRoids(_ sender: UIButton) {
         roids += 1
         
+        
         if roids == 2 { Person.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 185, height: 200)
+            Person.image = UIImage(named:"Roblox-1")
             self.view.addSubview(Person)
+            
+            
         }
         
         if roids == 3 { Person.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 285, height: 300)
@@ -61,37 +69,25 @@ class NutshackViewController: UIViewController {
         if roids == 5 {
             Person.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 85, height: 100)
             self.view.addSubview(Person)
-        Person.image = UIImage(named:"Tito")
+        Person.image = UIImage(named:"Roblox")
             if roids == 3 {
                 roids = 1
-                
-                }
-            
-                }
-        
-        
-        
-        func checkViewIsInterSecting(viewToCheck: UIView) -> Bool{
-            let allSubViews = self.view!.subviews
-            for Person in allSubViews{
-                if (!(viewToCheck .isEqual(Person))){
-                    if(viewToCheck.frame.intersects(Person.frame)){
-                        return true
-                        
-                        
-                    }
-                }
             }
-            return false
+
+        }
+    }
+    @IBAction func pickUp(_ sender: UIButton) {
+        if roidsView.frame.contains(Person.center)
+        {
+            Person.image = UIImage(named:"Roblox")
+    
             
         }
-        
-        if checkViewIsInterSecting(viewToCheck: Person) {
-            print("roids touched")
-        }
-            }
-        }
+    }
+    
+}
 
 
 
-                
+
+
