@@ -10,6 +10,8 @@ import UIKit
 
 class NutshackViewController: UIViewController {
     var roids = 1
+    @IBOutlet weak var endView: UIView!
+    
     
     @IBOutlet weak var roidsView: UIView!
     
@@ -44,6 +46,10 @@ class NutshackViewController: UIViewController {
             Person.image = UIImage(named:"Roblox-1")
             Person.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 22, height: 22)
             self.view.addSubview(Person)
+        }
+        
+        if endView.frame.contains(Person.center) {
+            Person.image = UIImage(named:"Roblox")
         }
         
         

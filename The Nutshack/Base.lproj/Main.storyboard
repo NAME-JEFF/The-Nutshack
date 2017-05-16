@@ -520,9 +520,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="krS-ho-077">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krS-ho-077">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="UOt-Og-es6">
                                         <rect key="frame" x="16" y="23" width="232" height="55"/>
@@ -642,6 +641,10 @@
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="0.21542721064883993" green="0.21779873704663211" blue="0.2162178194429332" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="375" id="cfA-xK-nT7"/>
+                                    <constraint firstAttribute="height" constant="667" id="dmh-Ri-rHy"/>
+                                </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDd-fF-DW5">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
@@ -652,9 +655,9 @@
                                             <constraint firstAttribute="height" constant="48" id="6z5-Re-i3b"/>
                                             <constraint firstAttribute="width" constant="147" id="Ynu-q4-knB"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="34"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
                                         <state key="normal" title="Pick Up">
-                                            <color key="titleColor" red="0.80480893782383423" green="0.42450950467542986" blue="0.029592527771966252" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <color key="titleColor" red="0.80480893782383423" green="0.19808034587166548" blue="0.11354064688747882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>
                                             <action selector="onPickUp:" destination="PHO-0H-prz" eventType="touchUpInside" id="cbi-u1-MjL"/>
@@ -676,12 +679,17 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="pDd-fF-DW5" secondAttribute="trailing" id="4aY-BR-HJt"/>
+                            <constraint firstItem="krS-ho-077" firstAttribute="leading" secondItem="fXf-Dc-bNf" secondAttribute="leading" id="CcA-vu-I1H"/>
                             <constraint firstItem="1qH-E1-7ry" firstAttribute="top" secondItem="pDd-fF-DW5" secondAttribute="bottom" id="I3S-1q-7an"/>
+                            <constraint firstItem="krS-ho-077" firstAttribute="top" secondItem="fXf-Dc-bNf" secondAttribute="top" id="ax3-hL-13J"/>
+                            <constraint firstAttribute="trailing" secondItem="krS-ho-077" secondAttribute="trailing" id="hiP-sZ-hyS"/>
                             <constraint firstItem="pDd-fF-DW5" firstAttribute="leading" secondItem="fXf-Dc-bNf" secondAttribute="leading" id="nY1-0M-g14"/>
+                            <constraint firstItem="1qH-E1-7ry" firstAttribute="top" secondItem="krS-ho-077" secondAttribute="bottom" id="s8P-3v-iRA"/>
                         </constraints>
                     </view>
                     <connections>
                         <outlet property="Person" destination="eRS-Mw-0fk" id="OSo-lS-0V7"/>
+                        <outlet property="endView" destination="JZV-QI-9po" id="Gr7-cg-xHb"/>
                         <outlet property="roidsView" destination="vu4-Jm-2d6" id="EdP-DQ-u1q"/>
                     </connections>
                 </viewController>
