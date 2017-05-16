@@ -10,8 +10,47 @@ import UIKit
 
 class NutshackViewController: UIViewController {
     var roids = 1
+    var determiner = 1
+    
+    @IBOutlet weak var startView: UIView!
+    
+    @IBOutlet weak var view1: UIView!
+    
+    @IBOutlet weak var view2: UIView!
+    
+    @IBOutlet weak var view3: UIView!
+    
+    @IBOutlet weak var view4: UIView!
+    
+    @IBOutlet weak var view5: UIView!
+    
+    @IBOutlet weak var view6: UIView!
+    
+    @IBOutlet weak var view7: UIView!
+    
+    @IBOutlet weak var view8: UIView!
+    
+    @IBOutlet weak var view9: UIView!
+    
+    @IBOutlet weak var view10: UIView!
+    
+    @IBOutlet weak var view11: UIView!
+    
+    @IBOutlet weak var view12: UIView!
+    
+    @IBOutlet weak var view13: UIView!
+    
+    @IBOutlet weak var view14: UIView!
+    
+    @IBOutlet weak var view15: UIView!
+    
+    @IBOutlet weak var view16: UIView!
+    
+    
+    
     @IBOutlet weak var endView: UIView!
     
+    @IBOutlet weak var backgroundView: UIView!
     
     @IBOutlet weak var roidsView: UIView!
     
@@ -22,6 +61,10 @@ class NutshackViewController: UIViewController {
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch : UITouch = touches.first as UITouch!
         location = touch.location(in: self.view)
+        
+        if backgroundView.frame.contains(Person.center) {
+        //    self.present(SecondViewController(), animated: true, completion: nil)
+        }
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -30,13 +73,40 @@ class NutshackViewController: UIViewController {
         
         Person.center = location
         
+        if backgroundView.frame.contains(Person.center) {
+        //    self.present(SecondViewController(), animated: true, completion: nil)
+        }
     }
 
     override func viewDidLoad() {
         super.viewDidLoad()
         Person.frame = CGRect(x: 290, y: 40, width: 44, height: 44)
         self.view.addSubview(Person)
-
+        
+                if startView.frame.contains(Person.center) {
+                determiner = 1
+        }
+        
+        if view1.frame.contains(Person.center) {
+            determiner = 1
+        }
+        
+        if view2.frame.contains(Person.center) {
+            determiner = 1
+        }
+        
+        if view3.frame.contains(Person.center) {
+            determiner = 1
+        }
+        
+        if backgroundView.frame.contains(Person.center) {
+            determiner = 0
+        }
+       
+        if determiner == 0 {
+            self.present(SecondViewController(), animated: true, completion: nil)
+        }
+        
     }
 
 
@@ -50,7 +120,7 @@ class NutshackViewController: UIViewController {
         
         if endView.frame.contains(Person.center) {
         Person.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 500, height: 500)
-            Person.image = UIImage(named:"Tito")
+            Person.image = UIImage(named:"shag")
         }
         
         
