@@ -32,16 +32,17 @@ class NutshackViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Person.frame = CGRect(x: 130, y: 450, width: 40, height: 40)
+        Person.frame = CGRect(x: 130, y: 450, width: 44, height: 44)
         self.view.addSubview(Person)
 
     }
 
-    @IBAction func pickUp(_ sender: UIButton) {
+
+    @IBAction func onPickUp(_ sender: UIButton) {
         if roidsView.frame.contains(Person.center)
         {
             Person.image = UIImage(named:"Roblox-1")
-            Person.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 20, height: 20)
+            Person.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 22, height: 22)
             self.view.addSubview(Person)
         }
         
