@@ -12,6 +12,7 @@
 		D7535E841EB2810F005FC446 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7535E821EB2810F005FC446 /* Main.storyboard */; };
 		D7535E861EB2810F005FC446 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7535E851EB2810F005FC446 /* Assets.xcassets */; };
 		D7535E891EB2810F005FC446 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D7535E871EB2810F005FC446 /* LaunchScreen.storyboard */; };
+		D7C7CBAA1ECB8D3C006E1D4F /* LaunchScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7C7CBA91ECB8D3C006E1D4F /* LaunchScreen.swift */; };
 		D7DE90571EB3CA0A00AA8EF4 /* NutshackViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DE90561EB3CA0A00AA8EF4 /* NutshackViewController.swift */; };
 		D7DE90591EB3CA1C00AA8EF4 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DE90581EB3CA1C00AA8EF4 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
@@ -24,6 +25,7 @@
 		D7535E851EB2810F005FC446 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7535E881EB2810F005FC446 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D7535E8A1EB2810F005FC446 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D7C7CBA91ECB8D3C006E1D4F /* LaunchScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LaunchScreen.swift; sourceTree = "<group>"; };
 		D7DE90561EB3CA0A00AA8EF4 /* NutshackViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NutshackViewController.swift; sourceTree = "<group>"; };
 		D7DE90581EB3CA1C00AA8EF4 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -65,6 +67,7 @@
 				D7535E821EB2810F005FC446 /* Main.storyboard */,
 				D7535E851EB2810F005FC446 /* Assets.xcassets */,
 				D7535E871EB2810F005FC446 /* LaunchScreen.storyboard */,
+				D7C7CBA91ECB8D3C006E1D4F /* LaunchScreen.swift */,
 				D7535E8A1EB2810F005FC446 /* Info.plist */,
 			);
 			path = "The Nutshack";
@@ -145,6 +148,7 @@
 			files = (
 				D7DE90591EB3CA1C00AA8EF4 /* SecondViewController.swift in Sources */,
 				D7DE90571EB3CA0A00AA8EF4 /* NutshackViewController.swift in Sources */,
+				D7C7CBAA1ECB8D3C006E1D4F /* LaunchScreen.swift in Sources */,
 				D7535E811EB2810F005FC446 /* ViewController.swift in Sources */,
 				D7535E7F1EB2810F005FC446 /* AppDelegate.swift in Sources */,
 			);
