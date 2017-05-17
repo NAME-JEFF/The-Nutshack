@@ -86,7 +86,7 @@
                                     <constraint firstAttribute="width" constant="284" id="QAb-0N-7q8"/>
                                     <constraint firstAttribute="height" constant="201" id="qfB-1I-7ao"/>
                                 </constraints>
-                                <string key="text">Drag your character through the maze, if you touch the walls, you die. On yellow platforms, press the red "Pick Up" button to apply an effect to your character. At the end, pick up the item to finish the game.</string>
+                                <string key="text">Drag your character through the maze, if you touch the walls, you die. On yellow platforms, press the red "Use" button to apply an effect to your character. At the end, pick up the item to finish the game.</string>
                                 <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
                                 <color key="textColor" red="0.66405705839243534" green="0.80950453367875652" blue="0.59639684756303146" alpha="0.74004181338028174" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
@@ -665,7 +665,7 @@
                                             <constraint firstAttribute="width" constant="147" id="Ynu-q4-knB"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
-                                        <state key="normal" title="Pick Up">
+                                        <state key="normal" title="Use">
                                             <color key="titleColor" red="0.80480893782383423" green="0.19808034587166548" blue="0.11354064688747882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         </state>
                                         <connections>

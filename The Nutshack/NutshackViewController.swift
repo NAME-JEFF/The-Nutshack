@@ -90,23 +90,35 @@ class NutshackViewController: UIViewController {
         if view1.frame.contains(Person.center) {
             determiner = 1
         }
+            else {
+            determiner = 0
+        }
         
         if view2.frame.contains(Person.center) {
             determiner = 1
         }
+        else {
+            determiner = 0
         
         if view3.frame.contains(Person.center) {
             determiner = 1
         }
+        else {
+            determiner = 0
         
         if backgroundView.frame.contains(Person.center) {
-            determiner = 0
+            determiner = 1
         }
+        else {
+            determiner = 0
        
         if determiner == 0 {
             self.present(SecondViewController(), animated: true, completion: nil)
         }
-        
+        }
+            }
+        }
+    
     }
 
 
