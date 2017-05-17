@@ -10,7 +10,7 @@ import UIKit
 
 
 
-func viewDidLoad() {
+/*func viewDidLoad() {
     super.viewDidLoad()
 
 
@@ -21,3 +21,4 @@ func showActivityIndicator(uiView: UIView){
     activityIndicator.startAnimating()
 }
 }
+*/
