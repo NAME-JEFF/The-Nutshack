@@ -47,7 +47,6 @@ class NutshackViewController: UIViewController {
     @IBOutlet weak var view16: UIView!
     
     
-    
     @IBOutlet weak var endView: UIView!
     
     @IBOutlet weak var backgroundView: UIView!
@@ -72,52 +71,28 @@ class NutshackViewController: UIViewController {
         location = touch.location(in: self.view)
         
         Person.center = location
+
         
-        if backgroundView.frame.contains(Person.center) {
-        //    self.present(SecondViewController(), animated: true, completion: nil)
-        }
-    }
+                            if backgroundView.frame.contains(Person.center) {
+                                determiner = 0
+                            }
+                            else {
+                                determiner = 1
+                    
+                    if determiner == 0 {
+                        self.present(SecondViewController(), animated: true, completion: nil)
+                    
+                }
+                }
+                }
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
         Person.frame = CGRect(x: 290, y: 40, width: 44, height: 44)
         self.view.addSubview(Person)
         
-                if startView.frame.contains(Person.center) {
-                determiner = 1
-        }
-        
-        if view1.frame.contains(Person.center) {
-            determiner = 1
-        }
-            else {
-            determiner = 0
-        }
-        
-        if view2.frame.contains(Person.center) {
-            determiner = 1
-        }
-        else {
-            determiner = 0
-        
-        if view3.frame.contains(Person.center) {
-            determiner = 1
-        }
-        else {
-            determiner = 0
-        
-        if backgroundView.frame.contains(Person.center) {
-            determiner = 1
-        }
-        else {
-            determiner = 0
-       
-        if determiner == 0 {
-            self.present(SecondViewController(), animated: true, completion: nil)
-        }
-        }
-            }
-        }
+
     
     }
 

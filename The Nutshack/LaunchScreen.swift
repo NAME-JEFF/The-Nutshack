@@ -10,14 +10,14 @@ import UIKit
 
 
 
-func viewDidLoad() {
-    super.viewDidLoad()
+//func viewDidLoad() {
+//    super.viewDidLoad()
 
 
 
-func showActivityIndicator(uiView: UIView){
-    self.view.bringSubviewToFront(loadingView);
-    loadingView.hidden = false
-    activityIndicator.startAnimating()
-}
-}
+//func showActivityIndicator(uiView: UIView){
+//    self.view.bringSubviewToFront(loadingView);
+//    loadingView.hidden = false
+//    activityIndicator.startAnimating()
+//}
+//}
