@@ -529,6 +529,34 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDd-fF-DW5">
+                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XM-of-EA0">
+                                        <rect key="frame" x="114" y="1" width="147" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="6z5-Re-i3b"/>
+                                            <constraint firstAttribute="width" constant="147" id="Ynu-q4-knB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
+                                        <state key="normal" title="Use">
+                                            <color key="titleColor" red="0.80480893782383423" green="0.19808034587166548" blue="0.11354064688747882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="onPickUp:" destination="PHO-0H-prz" eventType="touchUpInside" id="cbi-u1-MjL"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.13767001295336789" green="0.13767001295336789" blue="0.13767001295336789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="0XM-of-EA0" secondAttribute="trailing" constant="114" id="8Ld-xe-15i"/>
+                                    <constraint firstAttribute="width" constant="375" id="E8N-PF-BdI"/>
+                                    <constraint firstAttribute="height" constant="50" id="Pmo-R8-0Q2"/>
+                                    <constraint firstAttribute="bottom" secondItem="0XM-of-EA0" secondAttribute="bottom" constant="1" id="aft-6f-Snt"/>
+                                    <constraint firstItem="0XM-of-EA0" firstAttribute="leading" secondItem="pDd-fF-DW5" secondAttribute="leading" constant="114" id="g9X-s7-eDI"/>
+                                    <constraint firstItem="0XM-of-EA0" firstAttribute="top" secondItem="pDd-fF-DW5" secondAttribute="top" constant="1" id="u64-Ff-ubO"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="krS-ho-077">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <subviews>
@@ -653,34 +681,6 @@
                                 <constraints>
                                     <constraint firstAttribute="width" constant="375" id="cfA-xK-nT7"/>
                                     <constraint firstAttribute="height" constant="667" id="dmh-Ri-rHy"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDd-fF-DW5">
-                                <rect key="frame" x="0.0" y="617" width="375" height="50"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XM-of-EA0">
-                                        <rect key="frame" x="114" y="1" width="147" height="48"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="48" id="6z5-Re-i3b"/>
-                                            <constraint firstAttribute="width" constant="147" id="Ynu-q4-knB"/>
-                                        </constraints>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
-                                        <state key="normal" title="Use">
-                                            <color key="titleColor" red="0.80480893782383423" green="0.19808034587166548" blue="0.11354064688747882" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        </state>
-                                        <connections>
-                                            <action selector="onPickUp:" destination="PHO-0H-prz" eventType="touchUpInside" id="cbi-u1-MjL"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="0.13767001295336789" green="0.13767001295336789" blue="0.13767001295336789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="0XM-of-EA0" secondAttribute="trailing" constant="114" id="8Ld-xe-15i"/>
-                                    <constraint firstAttribute="width" constant="375" id="E8N-PF-BdI"/>
-                                    <constraint firstAttribute="height" constant="50" id="Pmo-R8-0Q2"/>
-                                    <constraint firstAttribute="bottom" secondItem="0XM-of-EA0" secondAttribute="bottom" constant="1" id="aft-6f-Snt"/>
-                                    <constraint firstItem="0XM-of-EA0" firstAttribute="leading" secondItem="pDd-fF-DW5" secondAttribute="leading" constant="114" id="g9X-s7-eDI"/>
-                                    <constraint firstItem="0XM-of-EA0" firstAttribute="top" secondItem="pDd-fF-DW5" secondAttribute="top" constant="1" id="u64-Ff-ubO"/>
                                 </constraints>
                             </view>
                         </subviews>

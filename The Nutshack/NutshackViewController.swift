@@ -10,42 +10,7 @@ import UIKit
 
 class NutshackViewController: UIViewController {
     var roids = 1
-    var determiner = 1
-    
-    @IBOutlet weak var startView: UIView!
-    
-    @IBOutlet weak var view1: UIView!
-    
-    @IBOutlet weak var view2: UIView!
-    
-    @IBOutlet weak var view3: UIView!
-    
-    @IBOutlet weak var view4: UIView!
-    
-    @IBOutlet weak var view5: UIView!
-    
-    @IBOutlet weak var view6: UIView!
-    
-    @IBOutlet weak var view7: UIView!
-    
-    @IBOutlet weak var view8: UIView!
-    
-    @IBOutlet weak var view9: UIView!
-    
-    @IBOutlet weak var view10: UIView!
-    
-    @IBOutlet weak var view11: UIView!
-    
-    @IBOutlet weak var view12: UIView!
-    
-    @IBOutlet weak var view13: UIView!
-    
-    @IBOutlet weak var view14: UIView!
-    
-    @IBOutlet weak var view15: UIView!
-    
-    @IBOutlet weak var view16: UIView!
-    
+    var determiner = 0
     
     @IBOutlet weak var endView: UIView!
     
@@ -64,6 +29,7 @@ class NutshackViewController: UIViewController {
         if backgroundView.frame.contains(Person.center) {
         //    self.present(SecondViewController(), animated: true, completion: nil)
         }
+    
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -74,15 +40,19 @@ class NutshackViewController: UIViewController {
 
         
                             if backgroundView.frame.contains(Person.center) {
-                                determiner = 0
-                            }
-                            else {
                                 determiner = 1
-                    
-                    if determiner == 0 {
-                        self.present(SecondViewController(), animated: true, completion: nil)
-                    
-                }
+                                }
+                                else {
+                                    if startView.frame.contains(Person.center) {
+                                    self.determiner = 0
+                                    }
+                                
+                    }
+
+                    if determiner == 1 {
+//                        self.present(SecondViewController(), animated: true, completion: nil)
+                    print("touched background")
+                
                 }
                 }
     
