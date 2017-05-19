@@ -12,11 +12,16 @@ class NutshackViewController: UIViewController {
     var roids = 1
     var determiner = 0
     
+    @IBOutlet weak var startView: UIView!
+    
     @IBOutlet weak var endView: UIView!
     
-    @IBOutlet weak var backgroundView: UIView!
-    
     @IBOutlet weak var roidsView: UIView!
+    
+    @IBOutlet weak var topBlack: UIView!
+    
+    @IBOutlet weak var blackView1: UIView!
+    
     
     var location = CGPoint(x: 0, y: 0)
     
@@ -26,9 +31,6 @@ class NutshackViewController: UIViewController {
         let touch : UITouch = touches.first as UITouch!
         location = touch.location(in: self.view)
         
-        if backgroundView.frame.contains(Person.center) {
-        //    self.present(SecondViewController(), animated: true, completion: nil)
-        }
     
     }
     
@@ -39,7 +41,7 @@ class NutshackViewController: UIViewController {
         Person.center = location
 
         
-                            if backgroundView.frame.contains(Person.center) {
+                            if topBlack.frame.contains(Person.center) {
                                 determiner = 1
                                 }
                                 else {
@@ -47,8 +49,18 @@ class NutshackViewController: UIViewController {
                                     self.determiner = 0
                                     }
                                 
+                                if blackView1.frame.contains(Person.center) {
+                                    determiner = 1
+                                }
+                                else {
+                                    if startView.frame.contains(Person.center) {
+                                        self.determiner = 0
+                                    }
+                                
                     }
 
+        }
+        
                     if determiner == 1 {
 //                        self.present(SecondViewController(), animated: true, completion: nil)
                     print("touched background")
@@ -59,7 +71,7 @@ class NutshackViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Person.frame = CGRect(x: 290, y: 40, width: 44, height: 44)
+        Person.frame = CGRect(x: 60, y: 55, width: 44, height: 44)
         self.view.addSubview(Person)
         
 
