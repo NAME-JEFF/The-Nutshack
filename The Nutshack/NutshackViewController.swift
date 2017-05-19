@@ -20,6 +20,7 @@ class NutshackViewController: UIViewController {
     
     @IBOutlet weak var topBlack: UIView!
     
+    @IBOutlet weak var blackView1: UIView!
     
     
     var location = CGPoint(x: 0, y: 0)
@@ -48,8 +49,18 @@ class NutshackViewController: UIViewController {
                                     self.determiner = 0
                                     }
                                 
+                                if blackView1.frame.contains(Person.center) {
+                                    determiner = 1
+                                }
+                                else {
+                                    if startView.frame.contains(Person.center) {
+                                        self.determiner = 0
+                                    }
+                                
                     }
 
+        }
+        
                     if determiner == 1 {
 //                        self.present(SecondViewController(), animated: true, completion: nil)
                     print("touched background")
@@ -60,7 +71,7 @@ class NutshackViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Person.frame = CGRect(x: 20, y: 20, width: 44, height: 44)
+        Person.frame = CGRect(x: 60, y: 55, width: 44, height: 44)
         self.view.addSubview(Person)
         
 
