@@ -56,61 +56,64 @@
                                             <segue destination="PHO-0H-prz" kind="show" id="0vY-Qq-99v"/>
                                         </connections>
                                     </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="8" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VU5-jx-zEP">
+                                        <rect key="frame" x="45" y="85" width="220" height="234"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="234" id="7k1-N4-iTc"/>
+                                            <constraint firstAttribute="width" constant="220" id="e7w-Y2-sML"/>
+                                        </constraints>
+                                        <string key="text">Drag your character through the maze, if you touch the walls, you die. On yellow platforms, press the red "Use" button to apply an effect to your character. At the end, pick up the item to finish the game.</string>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
+                                        <color key="textColor" red="0.66405705839243534" green="0.80950453367875652" blue="0.59639684756303146" alpha="0.74004181338028174" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The Nutshaq" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Szt-Yx-OXJ">
-                                        <rect key="frame" x="32" y="29" width="236" height="90"/>
+                                        <rect key="frame" x="25" y="17" width="260" height="90"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="90" id="cU7-DB-TgX"/>
-                                            <constraint firstAttribute="width" constant="236" id="zah-rI-eRX"/>
+                                            <constraint firstAttribute="width" constant="260" id="zah-rI-eRX"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="41"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="46"/>
                                         <color key="textColor" red="0.86400987694300513" green="0.042645765128568151" blue="0.087959771361799791" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.74004181338028174" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstItem="Szt-Yx-OXJ" firstAttribute="leading" secondItem="KsJ-LG-SQj" secondAttribute="leading" constant="32" id="0iw-Tb-LrL"/>
-                                    <constraint firstItem="AKe-gK-mCN" firstAttribute="leading" secondItem="KsJ-LG-SQj" secondAttribute="leading" constant="101.5" id="44x-0m-0sN"/>
+                                    <constraint firstItem="Szt-Yx-OXJ" firstAttribute="leading" secondItem="KsJ-LG-SQj" secondAttribute="leading" constant="25" id="0iw-Tb-LrL"/>
+                                    <constraint firstItem="AKe-gK-mCN" firstAttribute="leading" secondItem="KsJ-LG-SQj" secondAttribute="leading" constant="90" id="44x-0m-0sN"/>
                                     <constraint firstAttribute="height" constant="377" id="4Ln-zX-WYO"/>
-                                    <constraint firstItem="Szt-Yx-OXJ" firstAttribute="top" secondItem="KsJ-LG-SQj" secondAttribute="top" constant="29" id="DdM-Ft-6XH"/>
-                                    <constraint firstItem="AKe-gK-mCN" firstAttribute="top" secondItem="Szt-Yx-OXJ" secondAttribute="bottom" constant="192" id="IGN-Ue-w1I"/>
-                                    <constraint firstAttribute="bottom" secondItem="AKe-gK-mCN" secondAttribute="bottom" constant="10" id="MBX-L9-pbf"/>
+                                    <constraint firstAttribute="trailing" secondItem="VU5-jx-zEP" secondAttribute="trailing" constant="46" id="CAK-TA-sm0"/>
+                                    <constraint firstItem="Szt-Yx-OXJ" firstAttribute="top" secondItem="KsJ-LG-SQj" secondAttribute="top" constant="17" id="DdM-Ft-6XH"/>
+                                    <constraint firstItem="AKe-gK-mCN" firstAttribute="top" secondItem="VU5-jx-zEP" secondAttribute="bottom" constant="-13" id="FED-Cy-jzS"/>
+                                    <constraint firstItem="AKe-gK-mCN" firstAttribute="top" secondItem="Szt-Yx-OXJ" secondAttribute="bottom" constant="199" id="IGN-Ue-w1I"/>
+                                    <constraint firstItem="AKe-gK-mCN" firstAttribute="top" secondItem="VU5-jx-zEP" secondAttribute="bottom" constant="-13" id="IOw-jr-bEh"/>
+                                    <constraint firstItem="VU5-jx-zEP" firstAttribute="leading" secondItem="KsJ-LG-SQj" secondAttribute="leadingMargin" constant="37" id="IWj-MC-8BE"/>
+                                    <constraint firstItem="VU5-jx-zEP" firstAttribute="centerY" secondItem="KsJ-LG-SQj" secondAttribute="centerY" constant="13.5" id="KAz-6L-faS"/>
+                                    <constraint firstItem="VU5-jx-zEP" firstAttribute="leading" secondItem="KsJ-LG-SQj" secondAttribute="leading" constant="45" id="KeC-Ex-Sx0"/>
+                                    <constraint firstAttribute="bottom" secondItem="AKe-gK-mCN" secondAttribute="bottom" constant="15" id="MBX-L9-pbf"/>
+                                    <constraint firstItem="VU5-jx-zEP" firstAttribute="top" secondItem="KsJ-LG-SQj" secondAttribute="top" constant="85" id="Nsi-DI-StG"/>
                                     <constraint firstAttribute="width" constant="311" id="Wlw-5L-eZh"/>
-                                    <constraint firstAttribute="trailing" secondItem="Szt-Yx-OXJ" secondAttribute="trailing" constant="43" id="YGK-Z4-kK8"/>
-                                    <constraint firstAttribute="trailing" secondItem="AKe-gK-mCN" secondAttribute="trailing" constant="113.5" id="jAp-aN-7dJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="Szt-Yx-OXJ" secondAttribute="trailing" constant="26" id="YGK-Z4-kK8"/>
+                                    <constraint firstAttribute="trailing" secondItem="AKe-gK-mCN" secondAttribute="trailing" constant="90" id="jAp-aN-7dJ"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VU5-jx-zEP">
-                                <rect key="frame" x="37" y="249" width="284" height="201"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="284" id="QAb-0N-7q8"/>
-                                    <constraint firstAttribute="height" constant="201" id="qfB-1I-7ao"/>
-                                </constraints>
-                                <string key="text">Drag your character through the maze, if you touch the walls, you die. On yellow platforms, press the red "Use" button to apply an effect to your character. At the end, pick up the item to finish the game.</string>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="17"/>
-                                <color key="textColor" red="0.66405705839243534" green="0.80950453367875652" blue="0.59639684756303146" alpha="0.74004181338028174" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" red="0.84731217616580312" green="0.5976478839811834" blue="0.37224735926293473" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rra-4r-ccr" secondAttribute="bottom" id="494-CJ-NXy"/>
-                            <constraint firstItem="VU5-jx-zEP" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="BBJ-y8-PUf"/>
                             <constraint firstItem="KsJ-LG-SQj" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="125" id="FeY-qT-L7j"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="AD3-Xs-6Fv" secondAttribute="bottom" constant="145" id="Hzt-cy-IwV"/>
                             <constraint firstItem="rra-4r-ccr" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ige-Jc-3dg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="KsJ-LG-SQj" secondAttribute="bottom" constant="145" id="N4l-BC-ztJ"/>
                             <constraint firstAttribute="trailing" secondItem="rra-4r-ccr" secondAttribute="trailing" id="Ow2-lZ-9Xd"/>
                             <constraint firstItem="tzb-3Y-xG4" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="Qeq-Vv-42Z"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="VU5-jx-zEP" secondAttribute="trailing" constant="38" id="ULo-Vf-0hP"/>
                             <constraint firstItem="tzb-3Y-xG4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Ve2-KT-Sdl"/>
                             <constraint firstItem="AD3-Xs-6Fv" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Zvb-9H-DdD"/>
                             <constraint firstItem="KsJ-LG-SQj" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="15.5" id="eHC-Kk-8WJ"/>
                             <constraint firstAttribute="trailing" secondItem="tzb-3Y-xG4" secondAttribute="trailing" id="gQC-gC-YeE"/>
-                            <constraint firstItem="VU5-jx-zEP" firstAttribute="top" secondItem="tzb-3Y-xG4" secondAttribute="bottom" constant="24" id="kOl-G1-jPP"/>
                             <constraint firstAttribute="trailingMargin" secondItem="KsJ-LG-SQj" secondAttribute="trailing" constant="16.5" id="oTg-cM-Ysz"/>
                             <constraint firstItem="AD3-Xs-6Fv" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="201" id="pYi-S0-lFZ"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="VU5-jx-zEP" secondAttribute="bottom" constant="217" id="woU-iy-X1R"/>
                             <constraint firstAttribute="trailing" secondItem="AD3-Xs-6Fv" secondAttribute="trailing" id="znj-1x-4B2"/>
                         </constraints>
                     </view>
@@ -739,6 +742,19 @@
                     <connections>
                         <outlet property="Person" destination="eRS-Mw-0fk" id="OSo-lS-0V7"/>
                         <outlet property="blackView1" destination="G4u-RR-1GK" id="osK-kY-HDf"/>
+                        <outlet property="blackView10" destination="nnf-eh-orA" id="QaI-0H-Uyi"/>
+                        <outlet property="blackView11" destination="BeZ-Jr-mvT" id="dQQ-iY-FrD"/>
+                        <outlet property="blackView12" destination="G5u-Xa-3QU" id="JMq-dg-vBZ"/>
+                        <outlet property="blackView13" destination="b0f-Ho-Ajt" id="6Sm-Ng-rpt"/>
+                        <outlet property="blackView14" destination="vze-PK-SU4" id="Ssw-ow-pAo"/>
+                        <outlet property="blackView2" destination="fWZ-cn-cVh" id="9Pf-yo-qJr"/>
+                        <outlet property="blackView3" destination="XNz-YX-D34" id="otP-q8-fIu"/>
+                        <outlet property="blackView4" destination="PGl-06-sHi" id="90w-G0-flI"/>
+                        <outlet property="blackView5" destination="2n2-me-Gny" id="Yj9-Of-Ha9"/>
+                        <outlet property="blackView6" destination="Q12-dC-sgL" id="HB2-6u-YUo"/>
+                        <outlet property="blackView7" destination="PJe-9C-Y0Q" id="InW-TM-oGf"/>
+                        <outlet property="blackView8" destination="vjV-BH-7oc" id="DKB-qP-5g6"/>
+                        <outlet property="blackView9" destination="oZq-VZ-2oB" id="f5d-G4-KQo"/>
                         <outlet property="endView" destination="JZV-QI-9po" id="Gr7-cg-xHb"/>
                         <outlet property="roidsView" destination="vu4-Jm-2d6" id="EdP-DQ-u1q"/>
                         <outlet property="startView" destination="WbD-Sl-DbB" id="Dyc-Qb-bIs"/>
@@ -746,11 +762,7 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0h-C0-zLx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="m0h-8J-l58">
-                    <connections>
-                        <action selector="onPersonPanned:" destination="PHO-0H-prz" id="evJ-59-oVO"/>
-                    </connections>
-                </panGestureRecognizer>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="m0h-8J-l58"/>
             </objects>
             <point key="canvasLocation" x="839.20000000000005" y="580.65967016491754"/>
         </scene>
