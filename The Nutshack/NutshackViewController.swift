@@ -10,7 +10,7 @@ import UIKit
 
 class NutshackViewController: UIViewController {
     var roids = 1
-    var lives = 4
+    var lives = 3
     var determiner = 0
     
     @IBOutlet weak var livesLabel: UILabel!
@@ -169,7 +169,8 @@ class NutshackViewController: UIViewController {
                         
                         if lives == 0 {
                             print("dead")
-                            performSegue(withIdentifier: "SecondViewController", sender: self)
+                    //        performSegue(withIdentifier: "SecondViewController", sender: self)
+                            lives = 3
                         }
         
         

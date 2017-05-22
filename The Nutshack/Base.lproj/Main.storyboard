@@ -333,7 +333,7 @@
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kBz-Xj-Cq5">
                                 <rect key="frame" x="57" y="268" width="176" height="70"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.092995433200000005" green="0.4942364246" blue="0.95995402340000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="backgroundColor" red="1" green="0.044473230340000003" blue="0.1063797626" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="USq-uc-LaF">
                                 <rect key="frame" x="257" y="268" width="60" height="70"/>
