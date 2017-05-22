@@ -151,16 +151,13 @@ class NutshackViewController: UIViewController {
                             livesLabel.text = "Lives: 3"
                             livesLabel.textColor = UIColor.green
                             
-                            Person.frame = CGRect(x: 60, y: 60, width: 44, height: 44)
-                                    self.view.addSubview(Person)
-                            
                         }
                         if lives == 2 {
                             livesLabel.text = "Lives: 2"
                             livesLabel.textColor = UIColor.orange
-                            
                             Person.frame = CGRect(x: 60, y: 60, width: 44, height: 44)
-                                    self.view.addSubview(Person)                        }
+                                    self.view.addSubview(Person)
+                        }
                         
                         if lives == 1 {
                             livesLabel.text = "Lives: 1"
@@ -172,6 +169,7 @@ class NutshackViewController: UIViewController {
                         
                         if lives == 0 {
                             print("dead")
+                            performSegue(withIdentifier: "SecondViewController", sender: self)
                         }
         
         
