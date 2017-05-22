@@ -10,7 +10,10 @@ import UIKit
 
 class NutshackViewController: UIViewController {
     var roids = 1
+    var lives = 4
     var determiner = 0
+    
+    @IBOutlet weak var livesLabel: UILabel!
     
     @IBOutlet weak var startView: UIView!
     
@@ -142,17 +145,51 @@ class NutshackViewController: UIViewController {
 
         
                     if determiner == 1 {
-                        self.present(SecondViewController(), animated: true, completion: nil)
-                    print("touched background")
-                
-                }
-                }
-    
+                    lives -= 1
+                        
+                        if lives == 3 {
+                            livesLabel.text = "Lives: 3"
+                            livesLabel.textColor = UIColor.green
+                            
+                            Person.frame = CGRect(x: 60, y: 60, width: 44, height: 44)
+                                    self.view.addSubview(Person)
+                            
+                        }
+                        if lives == 2 {
+                            livesLabel.text = "Lives: 2"
+                            livesLabel.textColor = UIColor.orange
+                            
+                            Person.frame = CGRect(x: 60, y: 60, width: 44, height: 44)
+                                    self.view.addSubview(Person)                        }
+                        
+                        if lives == 1 {
+                            livesLabel.text = "Lives: 1"
+                            livesLabel.textColor = UIColor.red
+                            
+                            Person.frame = CGRect(x: 60, y: 60, width: 44, height: 44)
+                                    self.view.addSubview(Person)
+                        }
+                        
+                        if lives == 0 {
+                            print("dead")
+                        }
+        
+        
+
+        }
+}
+        
+
+
+
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         Person.frame = CGRect(x: 60, y: 60, width: 44, height: 44)
         self.view.addSubview(Person)
+        
+        livesLabel.text = "Lives: 3"
         
 
     
