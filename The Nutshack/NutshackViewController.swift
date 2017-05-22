@@ -12,11 +12,42 @@ class NutshackViewController: UIViewController {
     var roids = 1
     var determiner = 0
     
+    @IBOutlet weak var startView: UIView!
+    
     @IBOutlet weak var endView: UIView!
     
-    @IBOutlet weak var backgroundView: UIView!
-    
     @IBOutlet weak var roidsView: UIView!
+    
+    @IBOutlet weak var topBlack: UIView!
+    
+    @IBOutlet weak var blackView1: UIView!
+    
+    @IBOutlet weak var blackView2: UIView!
+    
+    @IBOutlet weak var blackView3: UIView!
+    
+    @IBOutlet weak var blackView4: UIView!
+    
+    @IBOutlet weak var blackView5: UIView!
+    
+    @IBOutlet weak var blackView6: UIView!
+
+    @IBOutlet weak var blackView7: UIView!
+    
+    @IBOutlet weak var blackView8: UIView!
+    
+    @IBOutlet weak var blackView9: UIView!
+    
+    @IBOutlet weak var blackView10: UIView!
+    
+    @IBOutlet weak var blackView11: UIView!
+    
+    @IBOutlet weak var blackView12: UIView!
+    
+    @IBOutlet weak var blackView13: UIView!
+    
+    @IBOutlet weak var blackView14: UIView!
+    
     
     var location = CGPoint(x: 0, y: 0)
     
@@ -26,9 +57,6 @@ class NutshackViewController: UIViewController {
         let touch : UITouch = touches.first as UITouch!
         location = touch.location(in: self.view)
         
-        if backgroundView.frame.contains(Person.center) {
-        //    self.present(SecondViewController(), animated: true, completion: nil)
-        }
     
     }
     
@@ -38,19 +66,83 @@ class NutshackViewController: UIViewController {
         
         Person.center = location
 
-        
-                            if backgroundView.frame.contains(Person.center) {
-                                determiner = 1
-                                }
-                                else {
                                     if startView.frame.contains(Person.center) {
-                                    self.determiner = 0
+                                        self.determiner = 0
                                     }
+        
+        if endView.frame.contains(Person.center) {
+            determiner = 0
+        }
+        
+        
+                                if topBlack.frame.contains(Person.center) {
+                                    determiner = 1
+                                }
+        
+                                if blackView1.frame.contains(Person.center) {
+                                    determiner = 1
+                                }
                                 
+                                if blackView1.frame.contains(Person.center) {
+                                    determiner = 1
+                                }
+                                
+                                if blackView2.frame.contains(Person.center) {
+                                    determiner = 1
+                                }
+                                
+                                if blackView3.frame.contains(Person.center) {
+                                    determiner = 1
+                                }
+                                
+                                if blackView4.frame.contains(Person.center) {
+                                    determiner = 1
+                                }
+                                
+                                if blackView5.frame.contains(Person.center) {
+                                    determiner = 1
+                                }
+                                
+                                if blackView6.frame.contains(Person.center) {
+                                    determiner = 1
+                                }
+                                
+                                if blackView7.frame.contains(Person.center) {
+                                    determiner = 1
+                                }
+                                
+                                if blackView8.frame.contains(Person.center) {
+                                    determiner = 1
+                                }
+                                
+                                if blackView9.frame.contains(Person.center) {
+                                    determiner = 1
+                                }
+                                
+                                if blackView10.frame.contains(Person.center) {
+                                    determiner = 1
+                                }
+                                
+                                if blackView11.frame.contains(Person.center) {
+                                    determiner = 1
+                                }
+                                
+                                if blackView12.frame.contains(Person.center) {
+                                    determiner = 1
+                                }
+                                
+                                if blackView13.frame.contains(Person.center) {
+                                    determiner = 1
+                                }
+
+                                if blackView14.frame.contains(Person.center) {
+                                    determiner = 1
+                        
                     }
 
+        
                     if determiner == 1 {
-//                        self.present(SecondViewController(), animated: true, completion: nil)
+                        self.present(SecondViewController(), animated: true, completion: nil)
                     print("touched background")
                 
                 }
@@ -59,7 +151,7 @@ class NutshackViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        Person.frame = CGRect(x: 290, y: 40, width: 44, height: 44)
+        Person.frame = CGRect(x: 60, y: 60, width: 44, height: 44)
         self.view.addSubview(Person)
         
 
