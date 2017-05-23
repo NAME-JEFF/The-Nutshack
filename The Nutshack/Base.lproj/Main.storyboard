@@ -667,6 +667,11 @@
                                             <outletCollection property="gestureRecognizers" destination="F1A-gr-AOY" appends="YES" id="Cp9-aC-K52"/>
                                         </connections>
                                     </imageView>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0tj-8I-VJ9">
+                                        <rect key="frame" x="29" y="29" width="51" height="51"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.43807023409665091" blue="0.40447895769131048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -767,6 +772,7 @@
                         <outlet property="blackView9" destination="oZq-VZ-2oB" id="f5d-G4-KQo"/>
                         <outlet property="endView" destination="JZV-QI-9po" id="Gr7-cg-xHb"/>
                         <outlet property="livesLabel" destination="Slc-Wc-eSp" id="ezx-Ts-Obw"/>
+                        <outlet property="personTouchZone" destination="0tj-8I-VJ9" id="Zeu-Rj-wJo"/>
                         <outlet property="roidsView" destination="vu4-Jm-2d6" id="EdP-DQ-u1q"/>
                         <outlet property="startView" destination="WbD-Sl-DbB" id="Dyc-Qb-bIs"/>
                         <outlet property="topBlack" destination="UaV-GJ-85t" id="Lm0-sx-rrf"/>
