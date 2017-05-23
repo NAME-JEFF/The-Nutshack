@@ -12,6 +12,8 @@ class NutshackViewController: UIViewController {
     var roids = 1
     var lives = 3
     var determiner = 0
+    var onT = 1
+    var touched = 0
     
     @IBOutlet weak var livesLabel: UILabel!
     
@@ -63,9 +65,23 @@ class NutshackViewController: UIViewController {
     
     }
     
+    @IBAction func onPersonPanned(_ sender: UIPanGestureRecognizer) {
+  //      onPersonPanned == 1 {
+        
+//        touched = 1
+//        }
+ //       else {
+//            touched = 0
+//        }
+        
+    }
+    
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch : UITouch = touches.first as UITouch!
-        location = touch.location(in: self.view)
+        
+        if touched == 1 {
+        
+            location = touch.location(in: self.view)
         
         Person.center = location
 
@@ -175,12 +191,9 @@ class NutshackViewController: UIViewController {
         
         
 
+            }
         }
-}
-        
-
-
-
+    }
 
 
     override func viewDidLoad() {

@@ -657,12 +657,15 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Roblox-1" translatesAutoresizingMaskIntoConstraints="NO" id="eRS-Mw-0fk">
+                                    <imageView contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Roblox-1" translatesAutoresizingMaskIntoConstraints="NO" id="eRS-Mw-0fk">
                                         <rect key="frame" x="30" y="30" width="50" height="50"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" red="1" green="0.15495635626118365" blue="0.47102818528620238" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="tintColor" red="0.77835311422793008" green="0.95716058184610142" blue="1" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
                                         <gestureRecognizers/>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="F1A-gr-AOY" appends="YES" id="Cp9-aC-K52"/>
+                                        </connections>
                                     </imageView>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.43807023409665091" blue="0.40447895769131048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -770,7 +773,11 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q0h-C0-zLx" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <panGestureRecognizer minimumNumberOfTouches="1" id="m0h-8J-l58"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="F1A-gr-AOY">
+                    <connections>
+                        <action selector="onPersonPanned:" destination="PHO-0H-prz" id="g4N-PU-xj5"/>
+                    </connections>
+                </panGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="839.20000000000005" y="580.65967016491754"/>
         </scene>
