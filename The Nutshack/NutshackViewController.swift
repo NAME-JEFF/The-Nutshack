@@ -55,6 +55,35 @@ class NutshackViewController: UIViewController {
     
     @IBOutlet weak var blackView14: UIView!
     
+    @IBOutlet weak var greenView: UIView!
+    
+    
+    @IBAction func moveCharacter(_ sender: UIButton) {
+//down
+                _ = self.greenView.frame
+                greenView.frame.origin.y += 10.0
+            }
+
+    @IBAction func moveCharacter2(_ sender: UIButton) {
+//up
+        _ = self.greenView.frame
+        greenView.frame.origin.y -= 10.0
+    }
+    
+    @IBAction func moveCharacter3(_ sender: UIButton) {
+//left
+        _ = self.greenView.frame
+        greenView.frame.origin.x += 10.0
+    }
+    
+    @IBAction func moveCharacter4(_ sender: UIButton) {
+//right
+        _ = self.greenView.frame
+        greenView.frame.origin.x -= 10.0
+    }
+    
+    
+    
     
     var location = CGPoint(x: 0, y: 0)
     

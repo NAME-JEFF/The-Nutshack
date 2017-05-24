@@ -77,7 +77,7 @@ class NutshackViewControllerTwo: UIViewController {
             
                         location = touch.location(in: self.view)
             
-            Person.center = location
+//            Person.center = location
             
                                     if startView.frame.contains(Person.center) {
                                         self.determiner = 0
@@ -220,3 +220,4 @@ class NutshackViewControllerTwo: UIViewController {
         }
         
 }
+

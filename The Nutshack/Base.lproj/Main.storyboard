@@ -635,6 +635,38 @@
                                         <color key="textColor" red="0.11948992606409402" green="0.90912515862944165" blue="0.073399861189877569" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <color key="highlightedColor" red="1" green="0.87374549580754479" blue="0.041356491962978637" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </label>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lVm-vA-67c">
+                                        <rect key="frame" x="281" y="30" width="47" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="DOWN"/>
+                                        <connections>
+                                            <action selector="moveCharacter:" destination="PHO-0H-prz" eventType="touchUpInside" id="2ht-dI-zPs"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vLw-Qp-kfj">
+                                        <rect key="frame" x="245" y="14" width="35" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="LEFT"/>
+                                        <connections>
+                                            <action selector="moveCharacter3:" destination="PHO-0H-prz" eventType="touchUpInside" id="IvI-TG-qe7"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3zc-iX-NKV">
+                                        <rect key="frame" x="322" y="0.0" width="45" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="RIGHT"/>
+                                        <connections>
+                                            <action selector="moveCharacter4:" destination="PHO-0H-prz" eventType="touchUpInside" id="bc4-Pr-Fn6"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3SY-PC-w6d">
+                                        <rect key="frame" x="277" y="-8" width="30" height="30"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" title="UP"/>
+                                        <connections>
+                                            <action selector="moveCharacter2:" destination="PHO-0H-prz" eventType="touchUpInside" id="p8R-b2-WBV"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.13767001295336789" green="0.13767001295336789" blue="0.13767001295336789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
@@ -671,6 +703,11 @@
                                         <rect key="frame" x="29" y="29" width="51" height="51"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    </view>
+                                    <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1gq-zB-obI">
+                                        <rect key="frame" x="8" y="8" width="40" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <color key="backgroundColor" red="0.48235556887674258" green="1" blue="0.25564487339039288" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                     </view>
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.43807023409665091" blue="0.40447895769131048" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -771,7 +808,10 @@
                         <outlet property="blackView8" destination="vjV-BH-7oc" id="DKB-qP-5g6"/>
                         <outlet property="blackView9" destination="oZq-VZ-2oB" id="f5d-G4-KQo"/>
                         <outlet property="endView" destination="JZV-QI-9po" id="Gr7-cg-xHb"/>
+                        <outlet property="greenView" destination="1gq-zB-obI" id="jEb-0C-7AA"/>
                         <outlet property="livesLabel" destination="Slc-Wc-eSp" id="ezx-Ts-Obw"/>
+                        <outlet property="moveCharacter2" destination="3SY-PC-w6d" id="187-uK-c6R"/>
+                        <outlet property="moveCharacter3" destination="vLw-Qp-kfj" id="hVu-Sw-PDO"/>
                         <outlet property="personTouchZone" destination="0tj-8I-VJ9" id="Zeu-Rj-wJo"/>
                         <outlet property="roidsView" destination="vu4-Jm-2d6" id="EdP-DQ-u1q"/>
                         <outlet property="startView" destination="WbD-Sl-DbB" id="Dyc-Qb-bIs"/>
