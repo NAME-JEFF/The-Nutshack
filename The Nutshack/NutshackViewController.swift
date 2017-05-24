@@ -102,10 +102,6 @@ class NutshackViewController: UIViewController {
                                     determiner = 1
                                 }
                                 
-                                if blackView1.frame.contains(Person.center) {
-                                    determiner = 1
-                                }
-                                
                                 if blackView2.frame.contains(Person.center) {
                                     determiner = 1
                                 }
