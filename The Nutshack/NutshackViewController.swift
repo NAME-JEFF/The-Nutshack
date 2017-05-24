@@ -61,8 +61,20 @@ class NutshackViewController: UIViewController {
     @IBOutlet weak var Person: UIImageView!
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        let touch : UITouch = touches.first as UITouch!
-        location = touch.location(in: self.view)
+        
+                                                personTouchZone.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 44, height: 44)
+        
+        onPannedBool = true
+        if onPannedBool == true {
+            touched = true
+            
+            
+            
+        }
+        else {
+            onPannedBool = false
+            touched = false
+        }
         
     
     }
@@ -82,19 +94,27 @@ class NutshackViewController: UIViewController {
     }
     
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        
+                                                personTouchZone.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 44, height: 44)
+        
         let touch : UITouch = touches.first as UITouch!
         
         if touched == true {
-                                        personTouchZone.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 51, height: 51)
+                                        personTouchZone.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 44, height: 44)
             
-            location = touch.location(in: self.personTouchZone)
+            if personTouchZone.frame.contains(Person.frame) {
+                
+            
+            
+            location = touch.location(in: self.view)
         
         Person.center = location
-
+        
                                     if startView.frame.contains(Person.center) {
                                         self.determiner = 0
                                     }
-        
+            
+            
         if endView.frame.contains(Person.center) {
             determiner = 0
         }
@@ -201,7 +221,8 @@ class NutshackViewController: UIViewController {
         }
     }
 
-
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         Person.frame = CGRect(x: 60, y: 60, width: 44, height: 44)
