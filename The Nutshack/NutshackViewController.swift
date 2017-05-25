@@ -147,12 +147,22 @@ class NutshackViewController: UIViewController {
             
             if lives == 0 {
                 print("dead")
-                performSegue(withIdentifier: "SecondViewController", sender: self)
+ //               performSegue(withIdentifier: "SecondViewController", sender: self)
+                
+                
+                let alertController = UIAlertController(title: "You Died", message:
+                    "exdee", preferredStyle: UIAlertControllerStyle.alert)
+                alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default,handler: nil))
+                
+                self.present(alertController, animated: true, completion: nil)
+                
+                lives = 3
+                greenView.frame = CGRect(x: 60, y: 60, width: 30, height: 30)
+                self.view.addSubview(greenView)
             }
-            
-            
-            
         }
+            
+        
     }
 
 
@@ -251,12 +261,21 @@ class NutshackViewController: UIViewController {
             
             if lives == 0 {
                 print("dead")
-                performSegue(withIdentifier: "SecondViewController", sender: self)
-            }
-            
-            
-            
+                //               performSegue(withIdentifier: "SecondViewController", sender: self)
+                
+                
+                let alertController = UIAlertController(title: "You Died", message:
+                    "feelsbadman", preferredStyle: UIAlertControllerStyle.alert)
+                alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default,handler: nil))
+                
+                self.present(alertController, animated: true, completion: nil)
+                
+                lives = 3
+                greenView.frame = CGRect(x: 60, y: 60, width: 30, height: 30)
+                self.view.addSubview(greenView)            }
         }
+        
+        
     }
 
 
@@ -352,12 +371,21 @@ class NutshackViewController: UIViewController {
             
             if lives == 0 {
                 print("dead")
-                performSegue(withIdentifier: "SecondViewController", sender: self)
-            }
-            
-            
-            
+                //               performSegue(withIdentifier: "SecondViewController", sender: self)
+                
+                
+                let alertController = UIAlertController(title: "You Died", message:
+                    "REKT", preferredStyle: UIAlertControllerStyle.alert)
+                alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default,handler: nil))
+                
+                self.present(alertController, animated: true, completion: nil)
+                
+                lives = 3
+                greenView.frame = CGRect(x: 60, y: 60, width: 30, height: 30)
+                self.view.addSubview(greenView)            }
         }
+        
+        
     }
 
     @IBAction func moveCharacter4(_ sender: UIButton) {
@@ -451,13 +479,21 @@ class NutshackViewController: UIViewController {
             
             if lives == 0 {
                 print("dead")
-                performSegue(withIdentifier: "SecondViewController", sender: self)
-            }
-            
-            
-            
+                //               performSegue(withIdentifier: "SecondViewController", sender: self)
+                
+                
+                let alertController = UIAlertController(title: "You Died", message:
+                    "RIP LMAO", preferredStyle: UIAlertControllerStyle.alert)
+                alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default,handler: nil))
+                
+                self.present(alertController, animated: true, completion: nil)
+                
+                lives = 3
+                greenView.frame = CGRect(x: 60, y: 60, width: 30, height: 30)
+                self.view.addSubview(greenView)            }
         }
-    
+        
+        
     }
 
 
