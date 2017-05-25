@@ -14,50 +14,55 @@ class NutshackViewControllerTwo: UIViewController {
     var lives = 3
     var determiner = 0
     var onT = 1
-    var touched = 0
+    var touched = false
+    var onBannedBool = false
     
     
     
-    @IBOutlet weak var BlackViewT1: UIView!
+    @IBOutlet weak var blackViewT1: UIView!
 
-    @IBOutlet weak var BlackViewT2: UIView!
+    @IBOutlet weak var blackViewT2: UIView!
     
-    @IBOutlet weak var BlackViewT3: UIView!
+    @IBOutlet weak var blackViewT3: UIView!
     
-    @IBOutlet weak var BlackViewT4: UIView!
+    @IBOutlet weak var blackViewT4: UIView!
     
-    @IBOutlet weak var BlackViewT5: UIView!
+    @IBOutlet weak var blackViewT5: UIView!
     
-    @IBOutlet weak var BlackViewT6: UIView!
+    @IBOutlet weak var blackViewT6: UIView!
     
-    @IBOutlet weak var BlackViewT7: UIView!
+    @IBOutlet weak var blackViewT7: UIView!
     
-    @IBOutlet weak var BlackViewT8: UIView!
+    @IBOutlet weak var blackViewT8: UIView!
     
-    @IBOutlet weak var BlackViewT9: UIView!
+    @IBOutlet weak var blackViewT9: UIView!
     
-    @IBOutlet weak var BlackViewT10: UIView!
+    @IBOutlet weak var blackViewT10: UIView!
     
-    @IBOutlet weak var BlackViewT11: UIView!
+    @IBOutlet weak var blackViewT11: UIView!
     
-    @IBOutlet weak var BlackViewT12: UIView!
+    @IBOutlet weak var blackViewT12: UIView!
     
-    @IBOutlet weak var BlackViewT13: UIView!
+    @IBOutlet weak var blackViewT13: UIView!
     
-    @IBOutlet weak var BlackViewT14: UIView!
+    @IBOutlet weak var blackViewT14: UIView!
     
-    @IBOutlet weak var BlackViewT15: UIView!
+    @IBOutlet weak var blackViewT15: UIView!
     
-    @IBOutlet weak var BlackViewT16: UIView!
+    @IBOutlet weak var blackViewT16: UIView!
     
-    @IBOutlet weak var BlackViewT17: UIView!
+    @IBOutlet weak var blackViewT17: UIView!
     
-    @IBOutlet weak var BlackViewT18: UIView!
+    @IBOutlet weak var blackViewT18: UIView!
     
-    @IBOutlet weak var BlackViewT19: UIView!
+    @IBOutlet weak var blackViewT19: UIView!
+    
+    @IBOutlet weak var blackViewT20: UIView!
+    
     
     var location = CGPoint(x: 0, y: 0)
     
+    @IBOutlet weak var Person: UIImageView!
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch : UITouch = touches.first as UITouch!
@@ -85,70 +90,66 @@ class NutshackViewControllerTwo: UIViewController {
             
             if endView.frame.contains(Person.center) {
                 determiner = 0
+
             }
             
-            
-                            if topBlack.frame.contains(Person.center) {
+                            if blackViewT1.frame.contains(Person.center) {
                                 determiner = 1
             }
             
-                            if blackView1.frame.contains(Person.center) {
+                            if blackViewT1.frame.contains(Person.center) {
                                 determiner = 1
             }
             
-                            if blackView1.frame.contains(Person.center) {
+                            if blackViewT2.frame.contains(Person.center) {
                                 determiner = 1
             }
             
-                            if blackView2.frame.contains(Person.center) {
+                            if blackViewT3.frame.contains(Person.center) {
                                 determiner = 1
             }
             
-                            if blackView3.frame.contains(Person.center) {
+                            if blackViewT4.frame.contains(Person.center) {
                                 determiner = 1
             }
             
-                            if blackView4.frame.contains(Person.center) {
+                            if blackViewT5.frame.contains(Person.center) {
                                 determiner = 1
             }
             
-                            if blackView5.frame.contains(Person.center) {
+                            if blackViewT6.frame.contains(Person.center) {
                                 determiner = 1
             }
             
-                            if blackView6.frame.contains(Person.center) {
+                            if blackViewT7.frame.contains(Person.center) {
                                 determiner = 1
             }
             
-                            if blackView7.frame.contains(Person.center) {
+                            if blackViewT8.frame.contains(Person.center) {
                                 determiner = 1
             }
             
-                            if blackView8.frame.contains(Person.center) {
+                            if blackViewT9.frame.contains(Person.center) {
                                 determiner = 1
             }
             
-                            if blackView9.frame.contains(Person.center) {
+                            if blackViewT10.frame.contains(Person.center) {
                                 determiner = 1
             }
             
-                            if blackView10.frame.contains(Person.center) {
+                            if blackViewT11.frame.contains(Person.center) {
                                 determiner = 1
             }
             
-                            if blackView11.frame.contains(Person.center) {
+                            if blackViewT12.frame.contains(Person.center) {
                                 determiner = 1
             }
             
-                            if blackView12.frame.contains(Person.center) {
+                            if blackViewT13.frame.contains(Person.center) {
                                 determiner = 1
             }
             
-                            if blackView13.frame.contains(Person.center) {
-                                determiner = 1
-            }
-            
-                            if blackView14.frame.contains(Person.center) {
+                            if blackViewT14.frame.contains(Person.center) {
                                 determiner = 1
                 
             }
