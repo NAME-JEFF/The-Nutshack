@@ -153,6 +153,26 @@ class NutshackViewControllerTwo: UIViewController {
                                 determiner = 1
                 
             }
+                            if blackViewT15.frame.contains(Person.center) {
+                                determiner = 1
+                
+            }if blackViewT16.frame.contains(Person.center) {
+                determiner = 1
+                
+            }if blackViewT17.frame.contains(Person.center) {
+                determiner = 1
+                
+            }if blackViewT18.frame.contains(Person.center) {
+                determiner = 1
+                
+            }if blackViewT19.frame.contains(Person.center) {
+                determiner = 1
+                
+            }if blackViewT20.frame.contains(Person.center) {
+                determiner = 1
+                
+            }
+            
             
             
             if determiner == 1 {
