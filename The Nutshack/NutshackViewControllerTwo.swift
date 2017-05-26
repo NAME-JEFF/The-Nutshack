@@ -18,6 +18,7 @@ class NutshackViewControllerTwo: UIViewController {
     var onBannedBool = false
     
     
+    @IBOutlet weak var livesLabelT: UILabel!
     
     @IBOutlet weak var blackViewT1: UIView!
 
@@ -78,19 +79,13 @@ class NutshackViewControllerTwo: UIViewController {
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch : UITouch = touches.first as UITouch!
         
-        if touched == 1 {
+        if touched == true {
             
                         location = touch.location(in: self.view)
             
-//            Person.center = location
-            
-                                    if startView.frame.contains(Person.center) {
-                                        self.determiner = 0
-            }
-            
-            if endView.frame.contains(Person.center) {
-                determiner = 0
 
+        
+                
             }
             
                             if blackViewT1.frame.contains(Person.center) {
@@ -156,20 +151,25 @@ class NutshackViewControllerTwo: UIViewController {
                             if blackViewT15.frame.contains(Person.center) {
                                 determiner = 1
                 
-            }if blackViewT16.frame.contains(Person.center) {
-                determiner = 1
+            }
+                            if blackViewT16.frame.contains(Person.center) {
+                                determiner = 1
                 
-            }if blackViewT17.frame.contains(Person.center) {
-                determiner = 1
+            }
+                            if blackViewT17.frame.contains(Person.center) {
+                                determiner = 1
                 
-            }if blackViewT18.frame.contains(Person.center) {
-                determiner = 1
+            }
+                            if blackViewT18.frame.contains(Person.center) {
+                                determiner = 1
                 
-            }if blackViewT19.frame.contains(Person.center) {
-                determiner = 1
+            }
+                            if blackViewT19.frame.contains(Person.center) {
+                                determiner = 1
                 
-            }if blackViewT20.frame.contains(Person.center) {
-                determiner = 1
+            }
+                            if blackViewT20.frame.contains(Person.center) {
+                                determiner = 1
                 
             }
             
@@ -179,20 +179,20 @@ class NutshackViewControllerTwo: UIViewController {
                 lives -= 1
                 
                 if lives == 3 {
-                    livesLabel.text = "Lives: 3"
-                    livesLabel.textColor = UIColor.green
+                    livesLabelT.text = "Lives: 3"
+                    livesLabelT.textColor = UIColor.green
                     
                 }
                 if lives == 2 {
-                    livesLabel.text = "Lives: 2"
-                    livesLabel.textColor = UIColor.orange
+                    livesLabelT.text = "Lives: 2"
+                    livesLabelT.textColor = UIColor.orange
                     Person.frame = CGRect(x: 60, y: 60, width: 44, height: 44)
                     self.view.addSubview(Person)
                 }
                 
                 if lives == 1 {
-                    livesLabel.text = "Lives: 1"
-                    livesLabel.textColor = UIColor.red
+                    livesLabelT.text = "Lives: 1"
+                    livesLabelT.textColor = UIColor.red
                     
                     Person.frame = CGRect(x: 60, y: 60, width: 44, height: 44)
                     self.view.addSubview(Person)
@@ -208,7 +208,7 @@ class NutshackViewControllerTwo: UIViewController {
                 
             }
         }
-    }
+    
 
     
     
@@ -219,7 +219,7 @@ class NutshackViewControllerTwo: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        livesLabel.text = "Lives: 3"
+        livesLabelT.text = "Lives: 3"
 
         }
         
