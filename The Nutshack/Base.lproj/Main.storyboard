@@ -544,6 +544,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sS4-2P-2pc">
+                                <rect key="frame" x="0.0" y="542" width="389" height="143"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dHz-bn-ZBS">
+                                        <rect key="frame" x="349" y="-624" width="75" height="767"/>
+                                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="75" id="EP2-AY-lR3"/>
+                                            <constraint firstAttribute="height" constant="767" id="RMj-sS-j76"/>
+                                        </constraints>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="389" id="Djf-6T-QNR"/>
+                                    <constraint firstItem="dHz-bn-ZBS" firstAttribute="leading" secondItem="sS4-2P-2pc" secondAttribute="leading" constant="349" id="aS7-27-vF9"/>
+                                    <constraint firstAttribute="trailing" secondItem="dHz-bn-ZBS" secondAttribute="trailing" constant="-35" id="l6H-ce-42c"/>
+                                    <constraint firstItem="dHz-bn-ZBS" firstAttribute="top" secondItem="sS4-2P-2pc" secondAttribute="top" constant="-624" id="ucq-yh-dzz"/>
+                                    <constraint firstAttribute="height" constant="143" id="uyz-2d-iFt"/>
+                                    <constraint firstAttribute="bottom" secondItem="dHz-bn-ZBS" secondAttribute="bottom" id="zip-r4-ne3"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JZV-QI-9po">
                                 <rect key="frame" x="241" y="480" width="110" height="110"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -686,22 +708,22 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="2n2-me-Gny">
-                                <rect key="frame" x="105" y="138" width="29" height="22"/>
+                                <rect key="frame" x="101" y="138" width="33" height="22"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Q12-dC-sgL">
-                                <rect key="frame" x="46" y="202" width="230" height="48"/>
+                                <rect key="frame" x="46" y="196" width="230" height="54"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="PJe-9C-Y0Q">
-                                <rect key="frame" x="231" y="79" width="76" height="163"/>
+                                <rect key="frame" x="221" y="73" width="93" height="177"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vjV-BH-7oc">
-                                <rect key="frame" x="241" y="250" width="35" height="128"/>
+                                <rect key="frame" x="241" y="250" width="42" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -711,22 +733,22 @@
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="BeZ-Jr-mvT">
-                                <rect key="frame" x="67" y="295" width="67" height="83"/>
+                                <rect key="frame" x="60" y="285" width="74" height="93"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="G5u-Xa-3QU">
-                                <rect key="frame" x="67" y="358" width="209" height="44"/>
+                                <rect key="frame" x="60" y="358" width="223" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b0f-Ho-Ajt">
-                                <rect key="frame" x="67" y="441" width="175" height="80"/>
+                                <rect key="frame" x="60" y="441" width="182" height="85"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vze-PK-SU4">
-                                <rect key="frame" x="67" y="542" width="175" height="67"/>
+                                <rect key="frame" x="60" y="542" width="182" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
@@ -740,8 +762,11 @@
                         <gestureRecognizers/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="pDd-fF-DW5" secondAttribute="trailing" id="4aY-BR-HJt"/>
+                            <constraint firstItem="sS4-2P-2pc" firstAttribute="leading" secondItem="fXf-Dc-bNf" secondAttribute="leading" id="7hO-Dy-Dze"/>
                             <constraint firstItem="1qH-E1-7ry" firstAttribute="top" secondItem="pDd-fF-DW5" secondAttribute="bottom" id="I3S-1q-7an"/>
+                            <constraint firstAttribute="bottom" secondItem="sS4-2P-2pc" secondAttribute="bottom" constant="-18" id="JQb-mg-1xm"/>
                             <constraint firstItem="pDd-fF-DW5" firstAttribute="leading" secondItem="fXf-Dc-bNf" secondAttribute="leading" id="nY1-0M-g14"/>
+                            <constraint firstAttribute="trailing" secondItem="sS4-2P-2pc" secondAttribute="trailing" constant="-14" id="zZe-qe-MXS"/>
                         </constraints>
                     </view>
                     <connections>
@@ -778,13 +803,9 @@
         </scene>
     </scenes>
     <resources>
-        <image name="FootPowderSPRAAAAAAAY" width="923" height="1382"/>
-        <image name="Roblox" width="420" height="420"/>
-        <image name="Roblox-1" width="796" height="1177"/>
         <image name="Yeah+boiiii+rollbutton+medium+030303+11ede6+roll+for+your+own_ce881c_6063286" width="308" height="321"/>
         <image name="dekuNUTrealNIBBERxddXD" width="400" height="325"/>
         <image name="namejeff" width="1422" height="1440"/>
         <image name="shag" width="200" height="162"/>
-        <image name="smurfCraft" width="300" height="168"/>
     </resources>
 </document>
