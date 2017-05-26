@@ -122,38 +122,6 @@
             </objects>
             <point key="canvasLocation" x="128.80000000000001" y="580.65967016491754"/>
         </scene>
-        <!--Second View Controller-->
-        <scene sceneID="VNT-TV-Sub">
-            <objects>
-                <viewController id="KWj-dq-00O" customClass="SecondViewController" customModule="The_Nutshack" customModuleProvider="target" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Ieg-z0-ALs"/>
-                        <viewControllerLayoutGuide type="bottom" id="jER-mm-fIR"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="62j-kB-GwA">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="michael" translatesAutoresizingMaskIntoConstraints="NO" id="Q0d-Jk-FqO">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="DEAD LMAO" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="D4N-ji-3Fh">
-                                <rect key="frame" x="27" y="292" width="320" height="83"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.53025968309859151" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="48"/>
-                                <color key="textColor" red="0.84263681994818651" green="0.0" blue="0.17686005844614935" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="highlightedColor" red="0.8205678175032658" green="0.84263681994818651" blue="0.81238355788163885" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                            </label>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="i1N-Vx-cSS" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="839" y="1346"/>
-        </scene>
         <!--Nutshack View Controller-->
         <scene sceneID="hv4-j1-rRq">
             <objects>
@@ -614,7 +582,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pDd-fF-DW5" userLabel="Action Bar">
                                 <rect key="frame" x="0.0" y="617" width="375" height="50"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XM-of-EA0">
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0XM-of-EA0">
                                         <rect key="frame" x="263" y="1" width="147" height="48"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="48" id="6z5-Re-i3b"/>
@@ -670,11 +638,11 @@
                                 </subviews>
                                 <color key="backgroundColor" red="0.13767001295336789" green="0.13767001295336789" blue="0.13767001295336789" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="0XM-of-EA0" secondAttribute="trailing" constant="114" id="8Ld-xe-15i"/>
+                                    <constraint firstAttribute="trailing" secondItem="0XM-of-EA0" secondAttribute="trailing" constant="-35" id="8Ld-xe-15i"/>
                                     <constraint firstAttribute="width" constant="375" id="E8N-PF-BdI"/>
                                     <constraint firstAttribute="height" constant="50" id="Pmo-R8-0Q2"/>
                                     <constraint firstAttribute="bottom" secondItem="0XM-of-EA0" secondAttribute="bottom" constant="1" id="aft-6f-Snt"/>
-                                    <constraint firstItem="0XM-of-EA0" firstAttribute="leading" secondItem="pDd-fF-DW5" secondAttribute="leading" constant="114" id="g9X-s7-eDI"/>
+                                    <constraint firstItem="0XM-of-EA0" firstAttribute="leading" secondItem="pDd-fF-DW5" secondAttribute="leading" constant="263" id="g9X-s7-eDI"/>
                                     <constraint firstItem="0XM-of-EA0" firstAttribute="top" secondItem="pDd-fF-DW5" secondAttribute="top" constant="1" id="u64-Ff-ubO"/>
                                 </constraints>
                             </view>
@@ -812,7 +780,6 @@
     <resources>
         <image name="Yeah+boiiii+rollbutton+medium+030303+11ede6+roll+for+your+own_ce881c_6063286" width="308" height="321"/>
         <image name="dekuNUTrealNIBBERxddXD" width="400" height="325"/>
-        <image name="michael" width="1080" height="1024"/>
         <image name="namejeff" width="1422" height="1440"/>
         <image name="shag" width="200" height="162"/>
     </resources>
