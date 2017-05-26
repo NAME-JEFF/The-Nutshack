@@ -9,11 +9,9 @@
 import UIKit
 
 class NutshackViewController: UIViewController {
-    var roids = 1
+    
     var lives = 3
     var determiner = 0
-    var onPannedBool = false
-    var touched = false
     
     @IBOutlet weak var personTouchZone: UIView!
     
@@ -61,221 +59,435 @@ class NutshackViewController: UIViewController {
     @IBAction func moveCharacter(_ sender: UIButton) {
 //down
                 _ = self.greenView.frame
-                greenView.frame.origin.y += 10.0
+                greenView.frame.origin.y += 15.0
+        
+        if topBlack.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView1.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView2.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView3.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView4.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView5.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView6.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView7.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView8.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView9.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView10.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView11.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView12.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView13.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView14.frame.contains(greenView.frame) {
+            determiner = 1
+            
+        }
+        
+        
+        if determiner == 1 {
+            lives -= 1
+            
+            if lives == 3 {
+                livesLabel.text = "Lives: 3"
+                livesLabel.textColor = UIColor.green
+                
             }
+            if lives == 2 {
+                livesLabel.text = "Lives: 2"
+                livesLabel.textColor = UIColor.orange
+                greenView.frame = CGRect(x: 60, y: 60, width: 30, height: 30)
+                self.view.addSubview(greenView)
+            }
+            
+            if lives == 1 {
+                livesLabel.text = "Lives: 1"
+                livesLabel.textColor = UIColor.red
+                greenView.frame = CGRect(x: 60, y: 60, width: 30, height: 30)
+                self.view.addSubview(greenView)
+            }
+            
+            if lives == 0 {
+                print("dead")
+                performSegue(withIdentifier: "SecondViewController", sender: self)
+            }
+            
+            
+            
+        }
+    }
+
+
+
+
+    
 
     @IBAction func moveCharacter2(_ sender: UIButton) {
 //up
         _ = self.greenView.frame
-        greenView.frame.origin.y -= 10.0
+        greenView.frame.origin.y -= 15.0
+        
+        if topBlack.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView1.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView2.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView3.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView4.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView5.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView6.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView7.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView8.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView9.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView10.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView11.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView12.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView13.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView14.frame.contains(greenView.frame) {
+            determiner = 1
+            
+        }
+        
+        
+        if determiner == 1 {
+            lives -= 1
+            
+            if lives == 3 {
+                livesLabel.text = "Lives: 3"
+                livesLabel.textColor = UIColor.green
+                
+            }
+            if lives == 2 {
+                livesLabel.text = "Lives: 2"
+                livesLabel.textColor = UIColor.orange
+                greenView.frame = CGRect(x: 60, y: 60, width: 30, height: 30)
+                self.view.addSubview(greenView)
+            }
+            
+            if lives == 1 {
+                livesLabel.text = "Lives: 1"
+                livesLabel.textColor = UIColor.red
+                greenView.frame = CGRect(x: 60, y: 60, width: 30, height: 30)
+                self.view.addSubview(greenView)
+            }
+            
+            if lives == 0 {
+                print("dead")
+                performSegue(withIdentifier: "SecondViewController", sender: self)
+            }
+            
+            
+            
+        }
     }
-    
+
+
+
     @IBAction func moveCharacter3(_ sender: UIButton) {
 //left
         _ = self.greenView.frame
-        greenView.frame.origin.x += 10.0
+        greenView.frame.origin.x -= 15.0
+        
+        if topBlack.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView1.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView2.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView3.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView4.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView5.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView6.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView7.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView8.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView9.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView10.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView11.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView12.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView13.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView14.frame.contains(greenView.frame) {
+            determiner = 1
+            
+        }
+        
+        
+        if determiner == 1 {
+            lives -= 1
+            
+            if lives == 3 {
+                livesLabel.text = "Lives: 3"
+                livesLabel.textColor = UIColor.green
+                
+            }
+            if lives == 2 {
+                livesLabel.text = "Lives: 2"
+                livesLabel.textColor = UIColor.orange
+                greenView.frame = CGRect(x: 60, y: 60, width: 30, height: 30)
+                self.view.addSubview(greenView)
+            }
+            
+            if lives == 1 {
+                livesLabel.text = "Lives: 1"
+                livesLabel.textColor = UIColor.red
+                greenView.frame = CGRect(x: 60, y: 60, width: 30, height: 30)
+                self.view.addSubview(greenView)
+            }
+            
+            if lives == 0 {
+                print("dead")
+                performSegue(withIdentifier: "SecondViewController", sender: self)
+            }
+            
+            
+            
+        }
     }
-    
+
     @IBAction func moveCharacter4(_ sender: UIButton) {
 //right
         _ = self.greenView.frame
-        greenView.frame.origin.x -= 10.0
-    }
-    
-    
-    
-    
-    var location = CGPoint(x: 0, y: 0)
-    
-    @IBOutlet weak var Person: UIImageView!
-    
-    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        greenView.frame.origin.x += 15.0
         
-                                                personTouchZone.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 44, height: 44)
-        
-        onPannedBool = true
-        if onPannedBool == true {
-            touched = true
-            
-            
-            
-        }
-        else {
-            onPannedBool = false
-            touched = false
+        if topBlack.frame.contains(greenView.frame) {
+            determiner = 1
         }
         
-    
-    }
-    
-    @IBAction func onPersonPanned(_ sender: UIPanGestureRecognizer) {
-        onPannedBool = true
-        if onPannedBool == true {
-        
-        touched = true
-            
-        }
-        else {
-            onPannedBool = false
-            touched = false
+        if blackView1.frame.contains(greenView.frame) {
+            determiner = 1
         }
         
-    }
-    
-    override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
+        if blackView2.frame.contains(greenView.frame) {
+            determiner = 1
+        }
         
-                                                personTouchZone.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 44, height: 44)
+        if blackView3.frame.contains(greenView.frame) {
+            determiner = 1
+        }
         
-        let touch : UITouch = touches.first as UITouch!
+        if blackView4.frame.contains(greenView.frame) {
+            determiner = 1
+        }
         
-        if touched == true {
-                                        personTouchZone.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 44, height: 44)
+        if blackView5.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView6.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView7.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView8.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView9.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView10.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView11.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView12.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView13.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView14.frame.contains(greenView.frame) {
+            determiner = 1
             
-            if personTouchZone.frame.contains(Person.frame) {
+        }
+        
+        
+        if determiner == 1 {
+            lives -= 1
+            
+            if lives == 3 {
+                livesLabel.text = "Lives: 3"
+                livesLabel.textColor = UIColor.green
                 
-            
-            
-            location = touch.location(in: self.view)
-        
-        Person.center = location
-        
-                                    if startView.frame.contains(Person.center) {
-                                        self.determiner = 0
-                                    }
-            
-            
-        if endView.frame.contains(Person.center) {
-            determiner = 0
-        }
-        
-        
-                                if topBlack.frame.contains(Person.center) {
-                                    determiner = 1
-                                }
-        
-                                if blackView1.frame.contains(Person.center) {
-                                    determiner = 1
-                                }
-                                
-                                if blackView2.frame.contains(Person.center) {
-                                    determiner = 1
-                                }
-                                
-                                if blackView3.frame.contains(Person.center) {
-                                    determiner = 1
-                                }
-                                
-                                if blackView4.frame.contains(Person.center) {
-                                    determiner = 1
-                                }
-                                
-                                if blackView5.frame.contains(Person.center) {
-                                    determiner = 1
-                                }
-                                
-                                if blackView6.frame.contains(Person.center) {
-                                    determiner = 1
-                                }
-                                
-                                if blackView7.frame.contains(Person.center) {
-                                    determiner = 1
-                                }
-                                
-                                if blackView8.frame.contains(Person.center) {
-                                    determiner = 1
-                                }
-                                
-                                if blackView9.frame.contains(Person.center) {
-                                    determiner = 1
-                                }
-                                
-                                if blackView10.frame.contains(Person.center) {
-                                    determiner = 1
-                                }
-                                
-                                if blackView11.frame.contains(Person.center) {
-                                    determiner = 1
-                                }
-                                
-                                if blackView12.frame.contains(Person.center) {
-                                    determiner = 1
-                                }
-                                
-                                if blackView13.frame.contains(Person.center) {
-                                    determiner = 1
-                                }
-
-                                if blackView14.frame.contains(Person.center) {
-                                    determiner = 1
-                        
-                    }
-
-        
-                    if determiner == 1 {
-                    lives -= 1
-                        
-                        if lives == 3 {
-                            livesLabel.text = "Lives: 3"
-                            livesLabel.textColor = UIColor.green
-                            
-                        }
-                        if lives == 2 {
-                            livesLabel.text = "Lives: 2"
-                            livesLabel.textColor = UIColor.orange
-                            Person.frame = CGRect(x: 60, y: 60, width: 44, height: 44)
-                                    self.view.addSubview(Person)
-                        }
-                        
-                        if lives == 1 {
-                            livesLabel.text = "Lives: 1"
-                            livesLabel.textColor = UIColor.red
-                            
-                            Person.frame = CGRect(x: 60, y: 60, width: 44, height: 44)
-                                    self.view.addSubview(Person)
-                        }
-                        
-                        if lives == 0 {
-                            print("dead")
-                    //        performSegue(withIdentifier: "SecondViewController", sender: self)
-                            lives = 3
-                        }
-        
-        
-
             }
+            if lives == 2 {
+                livesLabel.text = "Lives: 2"
+                livesLabel.textColor = UIColor.orange
+                greenView.frame = CGRect(x: 60, y: 60, width: 30, height: 30)
+                self.view.addSubview(greenView)
+            }
+            
+            if lives == 1 {
+                livesLabel.text = "Lives: 1"
+                livesLabel.textColor = UIColor.red
+                greenView.frame = CGRect(x: 60, y: 60, width: 30, height: 30)
+                self.view.addSubview(greenView)
+            }
+            
+            if lives == 0 {
+                print("dead")
+                performSegue(withIdentifier: "SecondViewController", sender: self)
+            }
+            
+            
+            
         }
+    
     }
 
-    }
-    
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        Person.frame = CGRect(x: 60, y: 60, width: 44, height: 44)
-        self.view.addSubview(Person)
+        greenView.frame = CGRect(x: 60, y: 60, width: 30, height: 30)
+        self.view.addSubview(greenView)
         
         livesLabel.text = "Lives: 3"
         
-
-    
+//greenView = UIImage(named:"Roblox-1")
     }
 
 
     @IBAction func onPickUp(_ sender: UIButton) {
-        if roidsView.frame.contains(Person.center)
+        if roidsView.frame.contains(greenView.frame)
         {
-            Person.image = UIImage(named:"Roblox-1")
-            Person.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 22, height: 22)
-            self.view.addSubview(Person)
+//            greenView.image = UIImage(named:"Roblox-1")
+            greenView.frame = CGRect(x: greenView.frame.origin.x, y: greenView.frame.origin.y, width: 15, height: 15)
+            self.view.addSubview(greenView)
         }
         
-        if endView.frame.contains(Person.center) {
-        Person.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 500, height: 500)
-            Person.image = UIImage(named:"shag")
+        if endView.frame.contains(greenView.center) {
+        greenView.frame = CGRect(x: greenView.frame.origin.x, y: greenView.frame.origin.y, width: 500, height: 500)
+//            greenView.image = UIImage(named:"shag")
         }
         
         
     }
-    
+
 }
 
 
@@ -286,8 +498,8 @@ class NutshackViewController: UIViewController {
 //if roids == 2 { Person.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 185, height: 200)
 //    Person.image = UIImage(named:"Roblox-1")
 //    self.view.addSubview(Person)
-    
-    
+
+
 //}
 
 //if roids == 3 { Person.frame = CGRect(x: Person.frame.origin.x, y: Person.frame.origin.y, width: 285, height: 300)
