@@ -916,10 +916,6 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dpad possible" translatesAutoresizingMaskIntoConstraints="NO" id="jeF-cs-gPf">
-                                <rect key="frame" x="129" y="607" width="150" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -969,7 +965,6 @@
         <image name="ShrinkPillREAL" width="19" height="19"/>
         <image name="Yeah+boiiii+rollbutton+medium+030303+11ede6+roll+for+your+own_ce881c_6063286" width="308" height="321"/>
         <image name="dekuNUTrealNIBBERxddXD" width="400" height="325"/>
-        <image name="dpad possible" width="292" height="290"/>
         <image name="julio" width="926" height="1051"/>
         <image name="julioclose" width="1080" height="1920"/>
         <image name="michael" width="1080" height="1024"/>
