@@ -638,8 +638,14 @@ class NutshackViewController: UIViewController {
         }
         
         if endView.frame.contains(greenView.center) {
-        greenView.frame = CGRect(x: greenView.frame.origin.x, y: greenView.frame.origin.y, width: 500, height: 500)
-//            greenView.image = UIImage(named:"shag")
+        greenView.frame = CGRect(x: greenView.frame.origin.x, y: greenView.frame.origin.y, width: 50, height: 50)
+            
+            let alertController = UIAlertController(title: "You Won", message:
+                "congratz my dude", preferredStyle: UIAlertControllerStyle.alert)
+            alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default,handler: nil))
+            
+            self.present(alertController, animated: true, completion: nil)
+            
         }
         
         
