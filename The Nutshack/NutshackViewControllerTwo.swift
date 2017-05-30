@@ -16,6 +16,7 @@ class NutshackViewControllerTwo: UIViewController {
     var onT = 1
     var touched = false
     var onBannedBool = false
+    var secret = 0
     
     @IBOutlet weak var endView: UIView!
     
@@ -65,6 +66,7 @@ class NutshackViewControllerTwo: UIViewController {
     
     @IBOutlet weak var blackViewT20: UIView!
     
+    @IBOutlet weak var hiddenSecret: UIView!
     
     var location = CGPoint(x: 0, y: 0)
     
@@ -182,8 +184,9 @@ class NutshackViewControllerTwo: UIViewController {
             
         }
         
-        
-        
+    
+    
+    
             if determiner == 1 {
                 lives -= 1
                 
@@ -246,8 +249,19 @@ class NutshackViewControllerTwo: UIViewController {
                 Person.image = UIImage(named:"shag")
             }
             
-            
+            if hiddenSecret.frame.contains(Person.center) {
+                secret = 1
+                if secret == 1 {
+                    UIViewController *toViewController = [self.storyboard
+                        instantiateViewControllerWithIdentifier:@"secret"];
+                    
+                    MyCustomSegue *segue = [[MyCustomSegue alloc] initWithIdentifier:@"" source:self destination:toViewController];
+                    [self prepareForSegue segue sender:
+                        sender]
+                    
+                    [segue perform]
         }
         
 }
 
+}

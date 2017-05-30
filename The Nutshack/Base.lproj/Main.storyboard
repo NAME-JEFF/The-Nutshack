@@ -574,7 +574,10 @@
                                         <rect key="frame" x="263" y="1" width="147" height="48"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Use"/>
+                                        <connections>
+                                            <action selector="onPickUp:" destination="zFv-l5-SkO" eventType="touchUpInside" id="K9n-W0-ymH"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="1" colorSpace="calibratedRGB"/>
@@ -657,6 +660,7 @@
                         <outlet property="blackViewT8" destination="7Re-dP-dJS" id="cm7-9B-2Pa"/>
                         <outlet property="blackViewT9" destination="TiZ-vx-a7B" id="MoI-kL-fc2"/>
                         <outlet property="endView" destination="viz-HO-v6S" id="X9h-cu-P1k"/>
+                        <outlet property="hiddenSecret" destination="Y3Q-1A-lqq" id="OsH-5r-wxR"/>
                         <outlet property="livesLabelT" destination="skU-sK-Xwu" id="Em8-GL-577"/>
                         <outlet property="prankZone" destination="Fk3-Mr-DXE" id="RDC-f3-mgu"/>
                         <outlet property="roidsView" destination="vnf-9i-Rv9" id="ppH-qp-CQ2"/>
@@ -665,6 +669,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a7j-4d-ktj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2448.8000000000002" y="538.38080959520244"/>
+        </scene>
+        <!--secret-->
+        <scene sceneID="PSL-qH-Pgi">
+            <objects>
+                <viewController title="secret" id="ctc-4P-Iom" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zb6-xz-MbO"/>
+                        <viewControllerLayoutGuide type="bottom" id="ALj-zA-cUg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="1g6-Qd-eKF">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PFn-3i-ce1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3164" y="538"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Qdq-YT-yfL">
@@ -894,6 +916,10 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                             </view>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="dpad possible" translatesAutoresizingMaskIntoConstraints="NO" id="jeF-cs-gPf">
+                                <rect key="frame" x="129" y="607" width="150" height="60"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <gestureRecognizers/>
@@ -943,6 +969,7 @@
         <image name="ShrinkPillREAL" width="19" height="19"/>
         <image name="Yeah+boiiii+rollbutton+medium+030303+11ede6+roll+for+your+own_ce881c_6063286" width="308" height="321"/>
         <image name="dekuNUTrealNIBBERxddXD" width="400" height="325"/>
+        <image name="dpad possible" width="292" height="290"/>
         <image name="julio" width="926" height="1051"/>
         <image name="julioclose" width="1080" height="1920"/>
         <image name="michael" width="1080" height="1024"/>
