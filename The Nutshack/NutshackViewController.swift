@@ -59,7 +59,7 @@ class NutshackViewController: UIViewController {
     @IBAction func moveCharacter(_ sender: UIButton) {
 //down
                 _ = self.greenView.frame
-                greenView.frame.origin.y += 15.0
+                greenView.frame.origin.y += 30.0
         
         if topBlack.frame.contains(greenView.frame) {
             determiner = 1
@@ -203,7 +203,7 @@ class NutshackViewController: UIViewController {
     @IBAction func moveCharacter2(_ sender: UIButton) {
 //up
         _ = self.greenView.frame
-        greenView.frame.origin.y -= 15.0
+        greenView.frame.origin.y -= 30.0
         
         if topBlack.frame.contains(greenView.frame) {
             determiner = 1
@@ -344,7 +344,7 @@ class NutshackViewController: UIViewController {
     @IBAction func moveCharacter3(_ sender: UIButton) {
 //left
         _ = self.greenView.frame
-        greenView.frame.origin.x -= 15.0
+        greenView.frame.origin.x -= 30.0
         
         if topBlack.frame.contains(greenView.frame) {
             determiner = 1
@@ -482,7 +482,7 @@ class NutshackViewController: UIViewController {
     @IBAction func moveCharacter4(_ sender: UIButton) {
 //right
         _ = self.greenView.frame
-        greenView.frame.origin.x += 15.0
+        greenView.frame.origin.x += 30.0
         
         if topBlack.frame.contains(greenView.frame) {
             determiner = 1
@@ -622,6 +622,8 @@ class NutshackViewController: UIViewController {
         super.viewDidLoad()
         greenView.frame = CGRect(x: 60, y: 60, width: 30, height: 30)
         self.view.addSubview(greenView)
+        
+        greenView.layer.cornerRadius = 35.0
         
         livesLabel.text = "Lives: 3"
         
