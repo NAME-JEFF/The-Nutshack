@@ -624,6 +624,7 @@
                         <outlet property="Person" destination="Pr8-IL-uiv" id="yOY-BI-tCO"/>
                         <outlet property="blackViewT20" destination="Xhp-eX-Cx9" id="2EG-Sx-BD0"/>
                         <outlet property="livesLabelT" destination="skU-sK-Xwu" id="Em8-GL-577"/>
+                        <outlet property="roidsView" destination="vnf-9i-Rv9" id="ppH-qp-CQ2"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a7j-4d-ktj" userLabel="First Responder" sceneMemberID="firstResponder"/>

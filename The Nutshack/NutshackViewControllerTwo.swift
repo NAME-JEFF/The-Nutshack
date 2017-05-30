@@ -17,6 +17,7 @@ class NutshackViewControllerTwo: UIViewController {
     var touched = false
     var onBannedBool = false
     
+    @IBOutlet weak var roidsView: UIImageView!
     
     @IBOutlet weak var livesLabelT: UILabel!
     
