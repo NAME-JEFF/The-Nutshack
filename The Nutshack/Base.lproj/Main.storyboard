@@ -476,7 +476,7 @@
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="YNA-QT-Fwu">
-                                <rect key="frame" x="135" y="483" width="78" height="8"/>
+                                <rect key="frame" x="135" y="483" width="78" height="7"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
@@ -598,6 +598,20 @@
                                 <rect key="frame" x="7.5" y="535" width="75" height="75"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="viz-HO-v6S">
+                                <rect key="frame" x="287.5" y="530" width="75" height="75"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="END" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0vh-Xf-rXp">
+                                        <rect key="frame" x="5" y="15" width="65" height="44"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" name="ChalkboardSE-Regular" family="Chalkboard SE" pointSize="24"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -622,8 +636,29 @@
                         <outlet property="BlackViewT8" destination="7Re-dP-dJS" id="ry6-Xt-qaR"/>
                         <outlet property="BlackViewT9" destination="TiZ-vx-a7B" id="Yr0-Mp-kRf"/>
                         <outlet property="Person" destination="Pr8-IL-uiv" id="yOY-BI-tCO"/>
+                        <outlet property="blackViewT1" destination="1qS-1W-Wm2" id="Lzu-YU-rmw"/>
+                        <outlet property="blackViewT10" destination="H1i-jJ-dB3" id="OgC-kB-UwZ"/>
+                        <outlet property="blackViewT11" destination="vC9-bk-E92" id="GzY-Wg-pCP"/>
+                        <outlet property="blackViewT12" destination="AQS-6u-N3c" id="aZD-em-bVS"/>
+                        <outlet property="blackViewT13" destination="QI2-TT-Vmv" id="R81-Bo-dix"/>
+                        <outlet property="blackViewT14" destination="DhZ-zE-Bih" id="Ame-oE-tSo"/>
+                        <outlet property="blackViewT15" destination="lGg-eH-fRg" id="jX4-1X-ajB"/>
+                        <outlet property="blackViewT16" destination="ynK-jK-oac" id="tJI-6N-CBS"/>
+                        <outlet property="blackViewT17" destination="YNA-QT-Fwu" id="98v-iG-Fpt"/>
+                        <outlet property="blackViewT18" destination="kjN-Qn-Sd1" id="Sck-x3-9rh"/>
+                        <outlet property="blackViewT19" destination="X0g-Mp-cBp" id="IW3-Pr-6n5"/>
+                        <outlet property="blackViewT2" destination="iB3-DY-72J" id="QkX-zP-8I8"/>
                         <outlet property="blackViewT20" destination="Xhp-eX-Cx9" id="2EG-Sx-BD0"/>
+                        <outlet property="blackViewT3" destination="IiD-1n-vfW" id="pxO-BA-USR"/>
+                        <outlet property="blackViewT4" destination="2GU-6E-12A" id="ILK-Wj-25o"/>
+                        <outlet property="blackViewT5" destination="X37-qh-pfR" id="q7Y-x1-iJS"/>
+                        <outlet property="blackViewT6" destination="jBN-kf-DnR" id="Lkh-H9-VMr"/>
+                        <outlet property="blackViewT7" destination="Plr-BR-Pdj" id="4As-mX-MVD"/>
+                        <outlet property="blackViewT8" destination="7Re-dP-dJS" id="cm7-9B-2Pa"/>
+                        <outlet property="blackViewT9" destination="TiZ-vx-a7B" id="MoI-kL-fc2"/>
+                        <outlet property="endView" destination="viz-HO-v6S" id="X9h-cu-P1k"/>
                         <outlet property="livesLabelT" destination="skU-sK-Xwu" id="Em8-GL-577"/>
+                        <outlet property="prankZone" destination="Fk3-Mr-DXE" id="RDC-f3-mgu"/>
                         <outlet property="roidsView" destination="vnf-9i-Rv9" id="ppH-qp-CQ2"/>
                     </connections>
                 </viewController>
@@ -680,7 +715,7 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
-                                <color key="backgroundColor" red="0.38399137829479457" green="1" blue="0.34179143659484568" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.40000000600000002" green="1" blue="0.40000000600000002" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                             <view contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="vu4-Jm-2d6">
                                 <rect key="frame" x="132" y="250" width="110" height="110"/>

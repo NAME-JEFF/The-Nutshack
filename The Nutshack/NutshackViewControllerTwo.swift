@@ -17,6 +17,10 @@ class NutshackViewControllerTwo: UIViewController {
     var touched = false
     var onBannedBool = false
     
+    @IBOutlet weak var endView: UIView!
+    
+    @IBOutlet weak var prankZone: UIView!
+    
     @IBOutlet weak var roidsView: UIImageView!
     
     @IBOutlet weak var livesLabelT: UILabel!
@@ -173,9 +177,13 @@ class NutshackViewControllerTwo: UIViewController {
                                 determiner = 1
                 
             }
+                            if prankZone.frame.contains(Person.center) {
+                                determiner = 1
             
-            
-            
+        }
+        
+        
+        
             if determiner == 1 {
                 lives -= 1
                 
