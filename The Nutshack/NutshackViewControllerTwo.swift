@@ -252,16 +252,9 @@ class NutshackViewControllerTwo: UIViewController {
             if hiddenSecret.frame.contains(Person.center) {
                 secret = 1
                 if secret == 1 {
-                    UIViewController *toViewController = [self.storyboard
-                        instantiateViewControllerWithIdentifier:@"secret"];
-                    
-                    MyCustomSegue *segue = [[MyCustomSegue alloc] initWithIdentifier:@"" source:self destination:toViewController];
-                    [self prepareForSegue segue sender:
-                        sender]
-                    
-                    [segue perform]
+
         }
         
 }
-
+}
 }
