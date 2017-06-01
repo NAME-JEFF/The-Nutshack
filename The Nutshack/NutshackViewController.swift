@@ -30,6 +30,50 @@ class NutshackViewController: UIViewController {
     
     @IBOutlet weak var blackView4: UIView!
     
+    @IBOutlet weak var blackView5: UIView!
+    
+    @IBOutlet weak var blackView6: UIView!
+    
+    @IBOutlet weak var blackView7: UIView!
+    
+    @IBOutlet weak var blackView8: UIView!
+    
+    @IBOutlet weak var blackView9: UIView!
+    
+    @IBOutlet weak var blackView10: UIView!
+    
+    @IBOutlet weak var blackView11: UIView!
+    
+    @IBOutlet weak var blackView12: UIView!
+    
+    @IBOutlet weak var blackView13: UIView!
+    
+    @IBOutlet weak var blackView14: UIView!
+    
+    @IBOutlet weak var blackView15: UIView!
+    
+    @IBOutlet weak var blackView16: UIView!
+    
+    @IBOutlet weak var blackView17: UIView!
+    
+    @IBOutlet weak var blackView18: UIView!
+    
+    @IBOutlet weak var blackView19: UIView!
+    
+    @IBOutlet weak var blackView20: UIView!
+    
+    @IBOutlet weak var blackView21: UIView!
+    
+    @IBOutlet weak var blackView22: UIView!
+    
+    @IBOutlet weak var blackView23: UIView!
+    
+    @IBOutlet weak var blackView24: UIView!
+    
+    
+    
+    
+    
     
     @IBOutlet weak var greenView: UIImageView!
     
@@ -59,6 +103,103 @@ class NutshackViewController: UIViewController {
             determiner = 1
         }
 
+        if blackView5.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView6.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView7.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView8.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView9.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView10.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView11.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView12.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView13.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView14.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView15.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView16.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView17.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView18.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView19.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView20.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView21.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView22.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView23.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView24.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        
         if determiner == 1 {
             lives -= 1
         
@@ -72,7 +213,7 @@ class NutshackViewController: UIViewController {
             if lives == 2 {
                 livesLabel.text = "Lives: 2"
                 livesLabel.textColor = UIColor.orange
-                greenView.frame = CGRect(x: 60, y: 60, width: 50, height: 50)
+                greenView.frame = CGRect(x: 60, y: 60, width: 20, height: 20)
                 self.view.addSubview(greenView)
                 if startView.frame.contains(greenView.frame) {
                 lives = 2
@@ -83,7 +224,7 @@ class NutshackViewController: UIViewController {
             if lives == 1 {
                 livesLabel.text = "Lives: 1"
                 livesLabel.textColor = UIColor.red
-                greenView.frame = CGRect(x: 60, y: 60, width: 50, height: 50)
+                greenView.frame = CGRect(x: 60, y: 60, width: 20, height: 20)
                 self.view.addSubview(greenView)
                 if startView.frame.contains(greenView.frame) {
                 lives = 1
@@ -94,7 +235,7 @@ class NutshackViewController: UIViewController {
             if lives == 0 {
                 print("dead")
  //               performSegue(withIdentifier: "SecondViewController", sender: self)
-                greenView.frame = CGRect(x: 60, y: 60, width: 50, height: 50)
+                greenView.frame = CGRect(x: 60, y: 60, width: 20, height: 20)
                 self.view.addSubview(greenView)
                 livesLabel.text = "DEAD"
                 if startView.frame.contains(greenView.frame) {
@@ -108,8 +249,7 @@ class NutshackViewController: UIViewController {
                 
                 self.present(alertController, animated: true, completion: nil)
                 
-                lives = 3
-                greenView.frame = CGRect(x: 60, y: 60, width: 50, height: 50)
+                greenView.frame = CGRect(x: 60, y: 60, width: 20, height: 20)
                 self.view.addSubview(greenView)
             }
         }
@@ -147,6 +287,100 @@ class NutshackViewController: UIViewController {
             determiner = 1
         }
         
+        if blackView5.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView6.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView7.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView8.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView9.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView10.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView11.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView12.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView13.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView14.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView15.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView16.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView17.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView18.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView19.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView20.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView21.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView22.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView23.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView24.frame.contains(greenView.frame) {
+            determiner = 1
+        }
         
         if determiner == 1 {
             lives -= 1
@@ -161,7 +395,7 @@ class NutshackViewController: UIViewController {
             if lives == 2 {
                 livesLabel.text = "Lives: 2"
                 livesLabel.textColor = UIColor.orange
-                greenView.frame = CGRect(x: 60, y: 60, width: 50, height: 50)
+                greenView.frame = CGRect(x: 60, y: 60, width: 20, height: 20)
                 self.view.addSubview(greenView)
                 if startView.frame.contains(greenView.frame) {
                     lives = 2
@@ -172,7 +406,7 @@ class NutshackViewController: UIViewController {
             if lives == 1 {
                 livesLabel.text = "Lives: 1"
                 livesLabel.textColor = UIColor.red
-                greenView.frame = CGRect(x: 60, y: 60, width: 50, height: 50)
+                greenView.frame = CGRect(x: 60, y: 60, width: 20, height: 20)
                 self.view.addSubview(greenView)
                 if startView.frame.contains(greenView.frame) {
                     lives = 1
@@ -183,7 +417,7 @@ class NutshackViewController: UIViewController {
             if lives == 0 {
                 print("dead")
                 //               performSegue(withIdentifier: "SecondViewController", sender: self)
-                greenView.frame = CGRect(x: 60, y: 60, width: 50, height: 50)
+                greenView.frame = CGRect(x: 60, y: 60, width: 20, height: 20)
                 self.view.addSubview(greenView)
                 livesLabel.text = "DEAD"
                 if startView.frame.contains(greenView.frame) {
@@ -198,8 +432,7 @@ class NutshackViewController: UIViewController {
                 
                 self.present(alertController, animated: true, completion: nil)
                 
-                lives = 3
-                greenView.frame = CGRect(x: 60, y: 60, width: 50, height: 50)
+                greenView.frame = CGRect(x: 60, y: 60, width: 20, height: 20)
                 self.view.addSubview(greenView)            }
         }
         
@@ -233,6 +466,101 @@ class NutshackViewController: UIViewController {
             determiner = 1
         }
         
+        if blackView5.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView6.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView7.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView8.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView9.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView10.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView11.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView12.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView13.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView14.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView15.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView16.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView17.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView18.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView19.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView20.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView21.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView22.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView23.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView24.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
         if determiner == 1 {
             lives -= 1
             
@@ -246,7 +574,7 @@ class NutshackViewController: UIViewController {
             if lives == 2 {
                 livesLabel.text = "Lives: 2"
                 livesLabel.textColor = UIColor.orange
-                greenView.frame = CGRect(x: 60, y: 60, width: 50, height: 50)
+                greenView.frame = CGRect(x: 60, y: 60, width: 20, height: 20)
                 self.view.addSubview(greenView)
                 if startView.frame.contains(greenView.frame) {
                     lives = 2
@@ -257,7 +585,7 @@ class NutshackViewController: UIViewController {
             if lives == 1 {
                 livesLabel.text = "Lives: 1"
                 livesLabel.textColor = UIColor.red
-                greenView.frame = CGRect(x: 60, y: 60, width: 50, height: 50)
+                greenView.frame = CGRect(x: 60, y: 60, width: 20, height: 20)
                 self.view.addSubview(greenView)
                 if startView.frame.contains(greenView.frame) {
                     lives = 1
@@ -268,7 +596,7 @@ class NutshackViewController: UIViewController {
             if lives == 0 {
                 print("dead")
                 //               performSegue(withIdentifier: "SecondViewController", sender: self)
-                greenView.frame = CGRect(x: 60, y: 60, width: 50, height: 50)
+                greenView.frame = CGRect(x: 60, y: 60, width: 20, height: 20)
                 self.view.addSubview(greenView)
                 livesLabel.text = "DEAD"
                 if startView.frame.contains(greenView.frame) {
@@ -281,8 +609,7 @@ class NutshackViewController: UIViewController {
                 alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default,handler: nil))
                 
                 self.present(alertController, animated: true, completion: nil)
-                
-                lives = 3
+
                 greenView.frame = CGRect(x: 60, y: 60, width: 50, height: 50)
                 self.view.addSubview(greenView)            }
         }
@@ -315,6 +642,101 @@ class NutshackViewController: UIViewController {
             determiner = 1
         }
         
+        if blackView5.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView6.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView7.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView8.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView9.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView10.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView11.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView12.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView13.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView14.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView15.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView16.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView17.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView18.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView19.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView20.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        if blackView21.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView22.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView23.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
+        
+        if blackView24.frame.contains(greenView.frame) {
+            determiner = 1
+        }
+        
         
         if determiner == 1 {
             lives -= 1
@@ -329,7 +751,7 @@ class NutshackViewController: UIViewController {
             if lives == 2 {
                 livesLabel.text = "Lives: 2"
                 livesLabel.textColor = UIColor.orange
-                greenView.frame = CGRect(x: 60, y: 60, width: 50, height: 50)
+                greenView.frame = CGRect(x: 60, y: 60, width: 20, height: 20)
                 self.view.addSubview(greenView)
                 if startView.frame.contains(greenView.frame) {
                     lives = 2
@@ -340,7 +762,7 @@ class NutshackViewController: UIViewController {
             if lives == 1 {
                 livesLabel.text = "Lives: 1"
                 livesLabel.textColor = UIColor.red
-                greenView.frame = CGRect(x: 60, y: 60, width: 50, height: 50)
+                greenView.frame = CGRect(x: 60, y: 60, width: 20, height: 20)
                 self.view.addSubview(greenView)
                 if startView.frame.contains(greenView.frame) {
                     lives = 1
@@ -350,13 +772,13 @@ class NutshackViewController: UIViewController {
             
             if lives == 0 {
                 print("dead")
-                //               performSegue(withIdentifier: "SecondViewController", sender: self)
-                greenView.frame = CGRect(x: 60, y: 60, width: 50, height: 50)
+                greenView.frame = CGRect(x: 60, y: 60, width: 20, height: 20)
                 self.view.addSubview(greenView)
                 livesLabel.text = "DEAD"
                 if startView.frame.contains(greenView.frame) {
                     lives = 0
                     determiner = 0
+                    
                 }
                 
                 let alertController = UIAlertController(title: "You Died", message:
@@ -365,8 +787,7 @@ class NutshackViewController: UIViewController {
                 
                 self.present(alertController, animated: true, completion: nil)
                 
-//                lives = 3
-                greenView.frame = CGRect(x: 60, y: 60, width: 50, height: 50)
+                greenView.frame = CGRect(x: 60, y: 60, width: 20, height: 20)
                 self.view.addSubview(greenView)            }
         }
         
@@ -376,10 +797,8 @@ class NutshackViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        greenView.frame = CGRect(x: 60, y: 60, width: 30, height: 30)
+        greenView.frame = CGRect(x: 60, y: 60, width: 25, height: 25)
         self.view.addSubview(greenView)
-        
-        greenView.layer.cornerRadius = 35.0
         
         livesLabel.text = "Lives: 3"
         
@@ -391,12 +810,12 @@ greenView.image = UIImage(named:"Roblox-1")
         if roidsView.frame.contains(greenView.frame)
         {
             greenView.image = UIImage(named:"Roblox-1")
-            greenView.frame = CGRect(x: greenView.frame.origin.x, y: greenView.frame.origin.y, width: 25, height: 25)
+            greenView.frame = CGRect(x: greenView.frame.origin.x, y: greenView.frame.origin.y, width: 12, height: 12)
             self.view.addSubview(greenView)
         }
         
         if endView.frame.contains(greenView.center) {
-        greenView.frame = CGRect(x: greenView.frame.origin.x, y: greenView.frame.origin.y, width: 40, height: 40)
+        greenView.frame = CGRect(x: greenView.frame.origin.x, y: greenView.frame.origin.y, width: 50, height: 50)
             
             greenView.image = UIImage(named:"Roblox")
             
