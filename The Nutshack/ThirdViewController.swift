@@ -1,14 +1,14 @@
 //
-//  SecondViewController.swift
+//  ThirdViewController.swift
 //  The Nutshack
 //
-//  Created by student8 on 4/28/17.
+//  Created by student8 on 6/5/17.
 //  Copyright © 2017 John Hersey High School. All rights reserved.
 //
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class ThirdViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

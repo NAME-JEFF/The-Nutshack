@@ -626,7 +626,7 @@
         <!--secret-->
         <scene sceneID="PSL-qH-Pgi">
             <objects>
-                <viewController title="secret" id="ctc-4P-Iom" sceneMemberID="viewController">
+                <viewController title="secret" id="ctc-4P-Iom" customClass="ThirdViewController" customModule="The_Nutshack" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="zb6-xz-MbO"/>
                         <viewControllerLayoutGuide type="bottom" id="ALj-zA-cUg"/>
@@ -826,6 +826,34 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFn-3i-ce1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3157.5999999999999" y="527.58620689655174"/>
+        </scene>
+        <!--Snek Vew-->
+        <scene sceneID="QqH-DY-K2G">
+            <objects>
+                <viewController modalTransitionStyle="flipHorizontal" id="f3y-iF-4Va" customClass="SnekVew" customModule="The_Nutshack" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="XH9-MN-EZ8"/>
+                        <viewControllerLayoutGuide type="bottom" id="o2j-gA-oKd"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W8p-bj-1e2">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yTH-uc-EIp">
+                                <rect key="frame" x="164" y="318" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Start"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <outlet property="Start" destination="yTH-uc-EIp" id="Bjw-NY-KGS"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bHd-62-opd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3158" y="1344"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Qdq-YT-yfL">
