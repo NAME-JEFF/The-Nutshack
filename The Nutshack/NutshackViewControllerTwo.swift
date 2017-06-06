@@ -72,6 +72,7 @@ class NutshackViewControllerTwo: UIViewController {
     
     @IBOutlet weak var Person: UIImageView!
     
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch : UITouch = touches.first as UITouch!
         location = touch.location(in: self.view)

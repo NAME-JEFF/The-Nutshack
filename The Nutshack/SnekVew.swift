@@ -1,27 +1,19 @@
-//
-//  SnekVew.swift
-//  The Nutshack
-//
-//  Created by student8 on 6/5/17.
-//  Copyright © 2017 John Hersey High School. All rights reserved.
-//
-
 import UIKit
 
-class SnekVew: UIViewController, SnakeViewDelegate {
-    @IBOutlet weak var Start: UIButton!
+class ViewController: UIViewController, SnakeViewDelegate {
+    @IBOutlet var startButton:UIButton?
+    var snakeView:SnakeView?
+    var timer:Timer?
     
     var snake:Snake?
-    var growfood:Point?
-
+    var fruit:Point?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
-
-        self.SnekVew = SnakeView(frame: self.view.bounds)
-        self.SnekVew!.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
-        self.view.insertSubview(self.snakeView!, atIndex: 0)
+        
+        self.snakeView = SnakeView(frame: self.view.bounds)
+        self.snakeView!.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        self.view.insertSubview(self.snakeView!, at: 0)
         
         if let view = self.snakeView {
             view.delegate = self
@@ -90,16 +82,16 @@ class SnekVew: UIViewController, SnakeViewDelegate {
             return
         }
         
-        self.startButton!.hidden = true
+        self.startButton!.isHidden = true
         let worldSize = WorldSize(width: 24, height: 15)
         self.snake = Snake(inSize: worldSize, length: 2)
         self.makeNewFruit()
-        self.timer = Timer.scheduledTimerWithTimeInterval(0.1, target: self, selector: "timerMethod:", userInfo: nil, repeats: true)
+        self.timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: "timerMethod:", userInfo: nil, repeats: true)
         self.snakeView!.setNeedsDisplay()
     }
     
     func endGame() {
-        self.startButton!.hidden = false
+        self.startButton!.isHidden = false
         self.timer!.invalidate()
         self.timer = nil
     }

@@ -1,56 +1,423 @@
-//
-//  SecondViewController.swift
-//  The Nutshack
-//
-//  Created by student8 on 4/28/17.
-//  Copyright © 2017 John Hersey High School. All rights reserved.
+import Foundation
 
-import UIKit
+prefix operator ++ {}
+postfix operator ++ {}
 
-protocol SnakeViewDelegate {
-    func snakeForSnakeView(view:SnakeView) -> Snake?
-    func pointOfFruitForSnakeView(view:SnakeView) -> Point?
+prefix operator -- {}
+postfix operator -- {}
+
+
+
+prefix func ++( x: inout Int) -> Int {
+    x += 1
+    return x
 }
 
-class SnakeView : UIView {
-    var delegate:SnakeViewDelegate?
+postfix func ++( x: inout Int) -> Int {
+    x += 1
+    return (x - 1)
+}
+
+prefix func ++( x: inout UInt) -> UInt {
+    x += 1
+    return x
+}
+
+postfix func ++( x: inout UInt) -> UInt {
+    x += 1
+    return (x - 1)
+}
+
+prefix func ++( x: inout Int8) -> Int8 {
+    x += 1
+    return x
+}
+
+postfix func ++( x: inout Int8) -> Int8 {
+    x += 1
+    return (x - 1)
+}
+
+prefix func ++( x: inout UInt8) -> UInt8 {
+    x += 1
+    return x
+}
+
+postfix func ++( x: inout UInt8) -> UInt8 {
+    x += 1
+    return (x - 1)
+}
+prefix func ++( x: inout Int16) -> Int16 {
+    x += 1
+    return x
+}
+
+postfix func ++( x: inout Int16) -> Int16 {
+    x += 1
+    return (x - 1)
+}
+
+prefix func ++( x: inout UInt16) -> UInt16 {
+    x += 1
+    return x
+}
+
+postfix func ++( x: inout UInt16) -> UInt16 {
+    x += 1
+    return (x - 1)
+}
+
+prefix func ++( x: inout Int32) -> Int32 {
+    x += 1
+    return x
+}
+
+postfix func ++( x: inout Int32) -> Int32 {
+    x += 1
+    return (x - 1)
+}
+
+prefix func ++( x: inout UInt32) -> UInt32 {
+    x += 1
+    return x
+}
+
+postfix func ++( x: inout UInt32) -> UInt32 {
+    x += 1
+    return (x - 1)
+}
+
+prefix func ++( x: inout Int64) -> Int64 {
+    x += 1
+    return x
+}
+
+postfix func ++( x: inout Int64) -> Int64 {
+    x += 1
+    return (x - 1)
+}
+
+prefix func ++( x: inout UInt64) -> UInt64 {
+    x += 1
+    return x
+}
+
+postfix func ++( x: inout UInt64) -> UInt64 {
+    x += 1
+    return (x - 1)
+}
+
+prefix func ++( x: inout Double) -> Double {
+    x += 1
+    return x
+}
+
+postfix func ++( x: inout Double) -> Double {
+    x += 1
+    return (x - 1)
+}
+
+prefix func ++( x: inout Float) -> Float {
+    x += 1
+    return x
+}
+
+postfix func ++( x: inout Float) -> Float {
+    x += 1
+    return (x - 1)
+}
+
+prefix func ++( x: inout Float80) -> Float80 {
+    x += 1
+    return x
+}
+
+postfix func ++( x: inout Float80) -> Float80 {
+    x += 1
+    return (x - 1)
+}
+
+prefix func ++<T : _Incrementable>( i: inout T) -> T {
+    i = i.successor()
+    return i
+}
+
+postfix func ++<T : _Incrementable>( i: inout T) -> T {
+    let y = i
+    i = i.()
+    return y
+}
+
+// Decrement
+prefix func --( x: inout Int) -> Int {
+    x -= 1
+    return x
+}
+
+postfix func --( x: inout Int) -> Int {
+    x -= 1
+    return (x + 1)
+}
+
+prefix func --( x: inout UInt) -> UInt {
+    x -= 1
+    return x
+}
+
+postfix func --( x: inout UInt) -> UInt {
+    x -= 1
+    return (x + 1)
+}
+
+prefix func --( x: inout Int8) -> Int8 {
+    x -= 1
+    return x
+}
+
+postfix func --( x: inout Int8) -> Int8 {
+    x -= 1
+    return (x + 1)
+}
+
+prefix func --( x: inout UInt8) -> UInt8 {
+    x -= 1
+    return x
+}
+
+postfix func --( x: inout UInt8) -> UInt8 {
+    x -= 1
+    return (x + 1)
+}
+prefix func --( x: inout Int16) -> Int16 {
+    x -= 1
+    return x
+}
+
+postfix func --( x: inout Int16) -> Int16 {
+    x -= 1
+    return (x + 1)
+}
+
+prefix func --( x: inout UInt16) -> UInt16 {
+    x -= 1
+    return x
+}
+
+postfix func --( x: inout UInt16) -> UInt16 {
+    x -= 1
+    return (x + 1)
+}
+
+prefix func --( x: inout Int32) -> Int32 {
+    x -= 1
+    return x
+}
+
+postfix func --( x: inout Int32) -> Int32 {
+    x -= 1
+    return (x + 1)
+}
+
+prefix func --( x: inout UInt32) -> UInt32 {
+    x -= 1
+    return x
+}
+
+postfix func --( x: inout UInt32) -> UInt32 {
+    x -= 1
+    return (x + 1)
+}
+
+prefix func --( x: inout Int64) -> Int64 {
+    x -= 1
+    return x
+}
+
+postfix func --( x: inout Int64) -> Int64 {
+    x -= 1
+    return (x + 1)
+}
+
+prefix func --( x: inout UInt64) -> UInt64 {
+    x -= 1
+    return x
+}
+
+postfix func --( x: inout UInt64) -> UInt64 {
+    x -= 1
+    return (x + 1)
+}
+
+prefix func --( x: inout Double) -> Double {
+    x -= 1
+    return x
+}
+
+postfix func --( x: inout Double) -> Double {
+    x -= 1
+    return (x + 1)
+}
+
+prefix func --( x: inout Float) -> Float {
+    x -= 1
+    return x
+}
+
+postfix func --( x: inout Float) -> Float {
+    x -= 1
+    return (x + 1)
+}
+
+prefix func --( x: inout Float80) -> Float80 {
+    x -= 1
+    return x
+}
+
+postfix func --( x: inout Float80) -> Float80 {
+    x -= 1
+    return (x + 1)
+}
+
+prefix func --<T : Comparable>( i: inout T) -> T {
+    i = i.predecessor()
+    return i
+}
+
+postfix func --<T : Comparable>( i: inout T) -> T {
+    let y = i
+    i = i.predecessor()
+    return y
+}
+
+
+
+struct WorldSize {
+    var width:Int
+    var height:Int
+}
+
+struct Point {
+    var x:Int
+    var y:Int
+}
+
+enum Direction: Int {
+    case left = 1
+    case right = 2
+    case up = 3
+    case down = 4
     
-    required init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)!
-        self.backgroundColor = UIColor.white
+    func canChangeTo(newDirection:Direction) -> Bool {
+        var canChange = false
+        switch self {
+        case .left, .right:
+            canChange = newDirection == .up || newDirection == .down
+        case .up, .down:
+            canChange = newDirection == .left || newDirection == .right
+        }
+        return canChange
     }
     
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        self.backgroundColor = UIColor.white
+    func move(point:Point, worldSize:WorldSize) -> (Point) {
+        var theX = point.x
+        var theY = point.y
+        switch self {
+        case .left:
+            if --theX < 0 {
+                theX = worldSize.width - 1
+            }
+        case .up:
+            if --theY < 0 {
+                theY = worldSize.height - 1
+            }
+        case .right:
+            if ++theX > worldSize.width {
+                theX = 0
+            }
+        case .down:
+            if ++theY > worldSize.height {
+                theY = 0
+            }
+        }
+        return Point(x: theX, y: theY)
+    }
+}
+
+class Snake {
+    var worldSize :WorldSize
+    var length :Int = 0
+    var points :[Point] = []
+    var direction :Direction = .left
+    var directionLocked :Bool = false
+    
+    init(inSize:WorldSize, length inLength:Int) {
+        self.worldSize = inSize
+        self.length = inLength
+        
+        let x:Int = self.worldSize.width / 2
+        let y:Int = self.worldSize.height / 2
+        for i in 0...inLength {
+            let p:Point = Point(x:x + i, y: y)
+            self.points.append(p)
+        }
     }
     
-    override func draw(_ rect: CGRect) {
-        super.draw(rect)
-        
-        guard let snake:Snake = delegate?.snakeForSnakeView(view: self) else {
+    final func move() {
+        self.points.removeLast()
+        let head = self.direction.move(point: points[0], worldSize: self.worldSize)
+        self.points.insert(head, at: 0)
+    }
+    
+    final func changeDirection(newDirection:Direction) {
+        if self.directionLocked {
             return
         }
-        
-        let worldSize = snake.worldSize
-        if worldSize.width <= 0 || worldSize.height <= 0 {
-            return
+        if self.direction.canChangeTo(newDirection: newDirection) {
+            self.direction = newDirection
         }
-        let w = Int(Float(self.bounds.size.width) / Float(worldSize.width))
-        let h = Int(Float(self.bounds.size.height) / Float(worldSize.height))
-        
-        UIColor.black.set()
-        let points = snake.points
-        for point in points {
-            let rect = CGRect(x: point.x * w, y: point.y * h, width: w, height: h)
-            UIBezierPath(rect: rect).fill()
+    }
+    
+    final func increaseLength(inLength:Int) {
+        let lastPoint:Point = self.points[self.points.count-1]
+        let theOneBeforeLastPoint:Point = self.points[self.points.count-2]
+        var x = lastPoint.x - theOneBeforeLastPoint.x
+        var y = lastPoint.y - theOneBeforeLastPoint.y
+        if lastPoint.x == 0 &&
+            theOneBeforeLastPoint.x == self.worldSize.width - 1	{
+            x = 1
         }
-        
-        guard let fruit = delegate?.pointOfFruitForSnakeView(view: self) else {
-            return
+        if (lastPoint.x == self.worldSize.width - 1 && theOneBeforeLastPoint.x == 0) {
+            x = -1
         }
-        UIColor.red.set()
-        let rect = CGRect(x: fruit.x * w, y: fruit.y * h, width: w, height: h)
-        UIBezierPath(ovalInRect: rect).fill()
+        if (lastPoint.y == 0 && theOneBeforeLastPoint.y == worldSize.height - 1) {
+            y = 1
+        }
+        if (lastPoint.y == worldSize.height - 1 && theOneBeforeLastPoint.y == 0) {
+            y = -1
+        }
+        for i in 0..<inLength {
+            let theX :Int = (lastPoint.x + x * (i + 1)) % worldSize.width
+            let theY :Int = (lastPoint.y + y * (i + 1)) % worldSize.height
+            self.points.append(Point(x:theX, y:theY))
+        }
+    }
+    
+    final func isHeadHitBody() -> Bool {
+        let headPoint = self.points[0]
+        for bodyPoint in self.points[1..<self.points.count] {
+            if (bodyPoint.x == headPoint.x &&
+                bodyPoint.y == headPoint.y) {
+                return true
+            }
+        }
+        return false
+    }
+    
+    final func lockDirection() {
+        self.directionLocked = true
+    }
+    
+    final func unlockDirection() {
+        self.directionLocked = false
     }
 }
