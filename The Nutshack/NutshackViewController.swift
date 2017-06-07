@@ -425,7 +425,7 @@ class NutshackViewController: UIViewController {
                 
                 let alertController = UIAlertController(title: "You Died", message:
                     "feelsbadman", preferredStyle: UIAlertControllerStyle.alert)
-                alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.,default,handler: nil))
+                alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default,handler: nil))
                 
                 self.present(alertController, animated: true, completion: nil)
                 
@@ -604,7 +604,7 @@ class NutshackViewController: UIViewController {
                 
                 let alertController = UIAlertController(title: "You Died", message:
                     "REKT", preferredStyle: UIAlertControllerStyle.alert)
-                alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.,default,handler: nil))
+                alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default,handler: nil))
                 
                 self.present(alertController, animated: true, completion: nil)
                 
@@ -781,7 +781,7 @@ class NutshackViewController: UIViewController {
                 
                 let alertController = UIAlertController(title: "You Died", message:
                     "RIP LMAO", preferredStyle: UIAlertControllerStyle.alert)
-                alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle,default,handler: nil))
+                alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default,handler: nil))
                 
                 self.present(alertController, animated: true, completion: nil)
                 
@@ -819,7 +819,7 @@ class NutshackViewController: UIViewController {
             
             let alertController = UIAlertController(title: "You Won", message:
                 "congratz my dude", preferredStyle: UIAlertControllerStyle.alert)
-            alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.,default,handler: nil))
+            alertController.addAction(UIAlertAction(title: "Continue", style: UIAlertActionStyle.default,handler: nil))
             
             self.present(alertController, animated: true, completion: nil)
             
