@@ -17,7 +17,7 @@
 		D7DE90591EB3CA1C00AA8EF4 /* SecretViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7DE90581EB3CA1C00AA8EF4 /* SecretViewController.swift */; };
 		D7E54AA51EE59AB8005542B9 /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E54AA41EE59AB8005542B9 /* ThirdViewController.swift */; };
 		D7E54AA71EE59B39005542B9 /* Snake.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E54AA61EE59B39005542B9 /* Snake.swift */; };
-		D7E54AA91EE59BA5005542B9 /* SnekVew.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E54AA81EE59BA5005542B9 /* SnekVew.swift */; };
+		D7E718561EE84D1E0028D1C1 /* SnekVew.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7E718551EE84D1E0028D1C1 /* SnekVew.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,7 +33,7 @@
 		D7DE90581EB3CA1C00AA8EF4 /* SecretViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecretViewController.swift; sourceTree = "<group>"; };
 		D7E54AA41EE59AB8005542B9 /* ThirdViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		D7E54AA61EE59B39005542B9 /* Snake.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Snake.swift; sourceTree = "<group>"; };
-		D7E54AA81EE59BA5005542B9 /* SnekVew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnekVew.swift; sourceTree = "<group>"; };
+		D7E718551EE84D1E0028D1C1 /* SnekVew.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SnekVew.swift; path = ../SnekVew.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -70,9 +70,9 @@
 				D7DE90561EB3CA0A00AA8EF4 /* NutshackViewController.swift */,
 				D701ACA11ECF804600115D39 /* NutshackViewControllerTwo.swift */,
 				D7E54AA41EE59AB8005542B9 /* ThirdViewController.swift */,
-				D7E54AA81EE59BA5005542B9 /* SnekVew.swift */,
 				D7DE90581EB3CA1C00AA8EF4 /* SecretViewController.swift */,
 				D7E54AA61EE59B39005542B9 /* Snake.swift */,
+				D7E718551EE84D1E0028D1C1 /* SnekVew.swift */,
 				D7535E821EB2810F005FC446 /* Main.storyboard */,
 				D7535E851EB2810F005FC446 /* Assets.xcassets */,
 				D7535E871EB2810F005FC446 /* LaunchScreen.storyboard */,
@@ -156,9 +156,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				D7E54AA71EE59B39005542B9 /* Snake.swift in Sources */,
-				D7E54AA91EE59BA5005542B9 /* SnekVew.swift in Sources */,
 				D701ACA21ECF804600115D39 /* NutshackViewControllerTwo.swift in Sources */,
 				D7DE90591EB3CA1C00AA8EF4 /* SecretViewController.swift in Sources */,
+				D7E718561EE84D1E0028D1C1 /* SnekVew.swift in Sources */,
 				D7DE90571EB3CA0A00AA8EF4 /* NutshackViewController.swift in Sources */,
 				D7E54AA51EE59AB8005542B9 /* ThirdViewController.swift in Sources */,
 				D7C7CBAA1ECB8D3C006E1D4F /* LaunchScreen.swift in Sources */,

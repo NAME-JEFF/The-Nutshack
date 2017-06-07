@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="f3y-iF-4Va">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -229,7 +229,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FOi-ql-Ksc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1577" y="1345"/>
+            <point key="canvasLocation" x="1577" y="1295"/>
         </scene>
         <!--Nutshack View Controller Two-->
         <scene sceneID="xPD-2R-x62">
@@ -621,7 +621,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a7j-4d-ktj" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2448.8000000000002" y="538.38080959520244"/>
+            <point key="canvasLocation" x="2345" y="581"/>
         </scene>
         <!--secret-->
         <scene sceneID="PSL-qH-Pgi">
@@ -825,7 +825,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PFn-3i-ce1" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3157.5999999999999" y="527.58620689655174"/>
+            <point key="canvasLocation" x="3126" y="581"/>
         </scene>
         <!--Snek Vew-->
         <scene sceneID="QqH-DY-K2G">
@@ -843,17 +843,17 @@
                                 <rect key="frame" x="164" y="318" width="46" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Start"/>
+                                <connections>
+                                    <action selector="startButton:" destination="f3y-iF-4Va" eventType="touchUpInside" id="Zff-6m-7cs"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <connections>
-                        <outlet property="Start" destination="yTH-uc-EIp" id="Bjw-NY-KGS"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bHd-62-opd" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3158" y="1344"/>
+            <point key="canvasLocation" x="3126" y="1295"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="Qdq-YT-yfL">
