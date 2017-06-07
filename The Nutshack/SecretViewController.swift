@@ -1,10 +1,10 @@
 import Foundation
 
-prefix operator ++ {}
-postfix operator ++ {}
+prefix operator ++
+postfix operator ++
 
-prefix operator -- {}
-postfix operator -- {}
+prefix operator --
+postfix operator --
 
 
 
@@ -138,17 +138,17 @@ postfix func ++( x: inout Float80) -> Float80 {
 }
 
 prefix func ++<T : _Incrementable>( i: inout T) -> T {
-    i = i.successor()
+    //i = i successor
     return i
 }
 
 postfix func ++<T : _Incrementable>( i: inout T) -> T {
     let y = i
-    i = i.()
+    //successor?
     return y
 }
 
-// Decrement
+// De_down.mp
 prefix func --( x: inout Int) -> Int {
     x -= 1
     return x
@@ -278,16 +278,9 @@ postfix func --( x: inout Float80) -> Float80 {
     return (x + 1)
 }
 
-prefix func --<T : Comparable>( i: inout T) -> T {
-    i = i.predecessor()
-    return i
-}
 
-postfix func --<T : Comparable>( i: inout T) -> T {
-    let y = i
-    i = i.predecessor()
-    return y
-}
+
+
 
 
 

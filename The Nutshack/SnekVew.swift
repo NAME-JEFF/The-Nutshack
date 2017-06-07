@@ -22,7 +22,7 @@ class ViewController: UIViewController, SnakeViewDelegate {
                           UISwipeGestureRecognizerDirection.left,
                           UISwipeGestureRecognizerDirection.up,
                           UISwipeGestureRecognizerDirection.down] {
-                            let gr = UISwipeGestureRecognizer(target: self, action: "swipe:")
+                            let gr = UISwipeGestureRecognizer(target: self, action: Selector(("swipe:")))
                             gr.direction = direction
                             self.view.addGestureRecognizer(gr)
         }
@@ -52,7 +52,7 @@ class ViewController: UIViewController, SnakeViewDelegate {
                 self.snake?.lockDirection()
             }
         default:
-            assert(false, "This could not happen")
+            assert(false, "This aint gon work fool")
         }
     }
     
@@ -61,9 +61,9 @@ class ViewController: UIViewController, SnakeViewDelegate {
         let worldSize = self.snake!.worldSize
         var x = 0, y = 0
         while (true) {
-            x = random() % worldSize.width
-            y = random() % worldSize.height
-            var isBody = false
+            x = Int(arc4random()) % worldSize.width
+            y = Int(arc4random()) % worldSize.height
+            var isBody = false 
             for p in self.snake!.points {
                 if p.x == x && p.y == y {
                     isBody = true
@@ -86,7 +86,7 @@ class ViewController: UIViewController, SnakeViewDelegate {
         let worldSize = WorldSize(width: 24, height: 15)
         self.snake = Snake(inSize: worldSize, length: 2)
         self.makeNewFruit()
-        self.timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: "timerMethod:", userInfo: nil, repeats: true)
+        self.timer = Timer.scheduledTimer(timeInterval: 0.1, target: self, selector: Selector(("timerMethod:")), userInfo: nil, repeats: true)
         self.snakeView!.setNeedsDisplay()
     }
     
