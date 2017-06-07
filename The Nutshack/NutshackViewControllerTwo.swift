@@ -9,7 +9,7 @@
 import UIKit
 
 class NutshackViewControllerTwo: UIViewController {
-    
+     
     var roids = 1
     var lives = 3
     var determiner = 0
